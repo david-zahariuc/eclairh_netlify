@@ -16,3 +16,4 @@ $("#gouvernance").click(function() {
 $("#accompagnement").click(function() {
     window.location.replace('accompagnement_individuel.html');
 })
+

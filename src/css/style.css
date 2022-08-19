@@ -1,9 +1,15 @@
+.center_80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .nav_top {
-    padding: 20px 100px;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
 .nav_top_left {
@@ -33,17 +39,27 @@
     height: 65px;
 }
 
+/*top nav elements*/
 img {
     height: 100%;
 }
 
 #tagline {
-
+    position: relative;
     display: inline-block;
     margin: 0;
-
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+#tagline::after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    left: 0;
+    background: transparent linear-gradient(90deg, #FFC000 0%, #FFC60AF3 0%, #FAFE6CCF 100%, #FAFF6F 100%) 0% 0% no-repeat padding-box;
 }
 
 .phone {
@@ -63,9 +79,8 @@ img {
 
 .phone_no,
 .contact_btn {
-    color: var(--unnamed-color-3c405b);
     text-align: center;
-    font: normal normal normal 1.25rem Poppins;
+    font: normal normal normal 1rem Poppins;
     letter-spacing: 0px;
     color: #3C405B;
     opacity: 1;
@@ -101,18 +116,16 @@ img {
     width: fit-content;
     height: fit-content;
     margin: 0 60px;
-    padding: 7px 20px;
+    padding: 5px 10px;
     /* UI Properties */
-    background: var(--unnamed-color-3c405b) 0% 0% no-repeat padding-box;
     background: #3C405B 0% 0% no-repeat padding-box;
     border-radius: 21px;
     opacity: 1;
 }
 
 #nav_bottom {
-    margin: 0 100px;
+    margin: 0 auto !important;
     padding: 20px 0;
-    background: transparent linear-gradient(269deg, var(--unnamed-color-f4f1de) 0%, var(--unnamed-color-e7d7c0) 100%) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(269deg, #F4F1DE 0%, #E7D7C0 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
 
@@ -121,7 +134,7 @@ img {
 .nav_bottom_link {
     color: var(--unnamed-color-fefdf6);
     text-align: center;
-    font: normal normal normal 20px/30px Poppins;
+    font: normal normal normal 0.9rem 'Poppins';
     letter-spacing: 0px;
     color: #FEFDF6;
     opacity: 1;
@@ -133,35 +146,56 @@ img {
 }
 
 .hero {
-    padding-left: 200px;
-    height: 765px;
+    padding: 60px 0;
+    width: 100%;
+    height: fit-content;
+
     background-image: url("./../img/hero_bg.svg");
     background-repeat: no-repeat;
-background-size: cover;    
-background-position-x: center;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
 
 }
 
+/*
+.nav_hero_shape {
+    position: relative;
+}
+
+.nav_hero_shape::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    min-height: 500px;
+    background-image: url("./../img/hero_bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    overflow: visible;
+    top: 0;
+    z-index: -1;
+}*/
+
 .heading {
-    margin: 80px 0;
-    color: var(--unnamed-color-3c405b);
-    text-align: left;
-    font-family: Poppins, sans-serif;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
-    letter-spacing: 0px;
+    letter-spacing: 0.25rem;
     color: #3C405B;
 }
 
 .sub_heading {
     width: 635px;
-    margin: 80px 0;
+    margin: 60px 0;
     text-align: left;
     font-family: Poppins, sans-serif;
     font-size: 1.25rem;
     letter-spacing: 0px;
     color: #3C405B;
 }
+
 .expertise {
     display: flex;
     flex-direction: column;
@@ -171,16 +205,21 @@ background-position-x: center;
 }
 
 .container_cards {
-    padding: 120px 0;
+    padding: 80px 0;
 }
-.cards_row {width: 100%;
+
+.cards_row {
+    margin: 40px 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: space-between;
+
 
 }
+
 .section_title {
+    position: relative;
     width: fit-content;
     margin: 0 auto;
     text-align: center;
@@ -188,46 +227,66 @@ background-position-x: center;
     font-style: italic;
     font-weight: 600;
     color: #3C405B;
-    font-size: 1.875rem;
+    font-size: 2rem;
     letter-spacing: 0px;
-    border-bottom: 7px solid;
-    border-color: #FAFE6CCF
+    text-shadow: -2px 2px 2px rgba(230, 215, 191, 0.74);
 }
+
+.section_title::after {
+    content: '';
+    height: 7px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    background: transparent linear-gradient(90deg, #FFC000 0%, #FFC60AF3 0%, #FAFE6CCF 100%, #FAFF6F 100%) 0% 0% no-repeat padding-box;
+
+}
+
 .container_cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.btr{
-    border-top: 3px solid !important;
-    border-color: #FECD17;
+
+
+.expertise_card_wrap {
+
+    padding-top: 3px;
+    padding-left: 3px;
+    position: relative;
+    width: 33%;
+min-height: fit-content;
+    margin: 0 20px;
+    background: #FEFDF6 0% 0% no-repeat padding-box;
+box-shadow: 5px 12px 7px #00000029;
 }
+
+.yellow_wrap {
+    background: transparent linear-gradient(140deg, #FEFDF6 0%, #FECD17 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.blue_wrap {
+    background: transparent linear-gradient(140deg, #FEFDF6 0%, #3C405B 100%) 0% 0% no-repeat padding-box;
+}
+
 .expertise_card {
-    border: transparent;
-    border-left: 3px solid !important;
-    border-image: 
-    linear-gradient(
-      to bottom, 
-      #FEFDF6, 
-      #FECD17
-    ) 1 100%;
-    margin: 40px 40px;
+height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 395px;
-    height: 422px;
-    padding: 35px;
+
     background: #FEFDF6 0% 0% no-repeat padding-box;
-    box-shadow: 5px 12px 7px #00000029;
     opacity: 1;
+    padding: 30px;
 }
 
 .expertise_img_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200px;
+    height: 150px;
 }
 
 
@@ -236,10 +295,10 @@ background-position-x: center;
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #3C405B;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     letter-spacing: 0px
 }
 
@@ -267,18 +326,22 @@ background-position-x: center;
     padding: 15px;
     background: #FEFDF6 0% 0% no-repeat padding-box;
 }
-.card_to_bottom{
+
+.card_to_bottom {
     justify-content: flex-end;
 }
-.card_to_top{
+
+.card_to_top {
     justify-content: flex-start;
 }
+
 .values_img_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 200px;
 }
+
 .value_tagline {
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -288,11 +351,12 @@ background-position-x: center;
     letter-spacing: 0px;
 
 }
-.values_card{
+
+.values_card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-        height: 332px;
+    height: 332px;
 }
 
 /*temonaiges*/
@@ -310,11 +374,13 @@ background-position-x: center;
     padding: 100px;
 
 }
+
 .review_quotes {
     font-family: 'MS UI Gothic';
     font-size: 50px;
 }
-.review_text{
+
+.review_text {
     text-align: center;
     padding: 25px;
     font-family: 'Poppins', sans-serif;
@@ -324,10 +390,11 @@ background-position-x: center;
     letter-spacing: 0px;
 }
 
-.footer_bg{
+.footer_bg {
     background: linear-gradient(to top, #E7D7C0 50%, #FEFDF6 100%);
 
 }
+
 .review {
     margin-bottom: 120px;
 }
@@ -335,32 +402,38 @@ background-position-x: center;
 
 /* pages individueles */
 
-.conseil_rh{
+.conseil_rh {
     height: 425px;
     background: #F4F1DE 0% 0% no-repeat padding-box;
 }
-.container_conseil_rh{
+
+.container_conseil_rh {
     width: 80%;
     margin: 0 auto;
 
 }
-.conseil_sub_heading{
+
+.conseil_sub_heading {
     width: 950px;
-height: 125px;
+    height: 125px;
 }
-.conseil_heading{
+
+.conseil_heading {
     margin-top: 120px;
 }
+
 .block {
     height: 1000px;
 }
-.cards_single_row{
+
+.cards_single_row {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.expertise_card_smaller{
+
+.expertise_card_smaller {
     box-sizing: border-box;
     margin: 20px 20px;
     display: flex;
