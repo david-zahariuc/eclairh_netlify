@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav_top">
+                <div class="nav_top_left">
+                    <div class="logo"><a href="index.html"><img class="logo_img" src="./img/logo.svg" alt=""></a></div>
+                    <div>
+                        <h2 id="tagline">Expertise en Organisation & Ressources Humaines</h2>
+                    </div>
+                </div>
+                <div class="nav_top_right">
+                    <div>
+                        <figure class="phone">
+                            <img class="phone_icon" src="./img/phone_icon.svg" alt="">
+                            <figcaption class="phone_no">06 15 90 21 38</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <button class="contact_btn">Contactez-nous</button>
+                    </div>
+                </div>
+            </div>
+            <!--<div> <ul> <li>Qui sommes nous</li> <li>Expertises</li> <li>Vous étes</li> <li>Fil d'actualités</li> </ul> </div>-->
+        </header>
+        <main>
+            <section class="hero">
+                <nav id="nav_bottom" class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse nav_bottom_order" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav_bottom_item">
+                                <a class="nav-link nav_bottom_link" href="#">Qui sommes nous</a>
+                            </li>
+                            <li class="nav_bottom_item">
+                                <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Expertises</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="conseil_rh.html">Conseil RH</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="audit_organisationnel.html">Audit Organisationnel</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="gestion.html">Mise en place d'une gestion RH saine et perenne</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="conformite_legale.html">Conformité Légale</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="gouvernance_partagee.html">Gouvernance Partagée</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="accompagnement_individuel">Accompagnement individuel</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav_bottom_item">
+                                <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vous étes</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav_bottom_item">
+                                <a class="nav-link nav_bottom_link" href="#">
+                                    Fil d'actualités
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <h2 class="heading">DU CONSEIL À L'OPERATIONNEL</h2>
+                <p class="sub_heading">Un savoir-faire en organisation et en ressources humaines dédié à tous les acteurs du monde du travail : Entreprise, Salariés, Association, Personne en recherche de projet professionnel.
+                </p>
+            </section>
+            <section class="expertise" id="expertise_section">
+                <h2 class="section_title">Vos enjeux...Nos champs d'action</h2>
+                <div class="container_cards">
+
+                    <div class="cards_row">
+                        <div class="expertise_card btr">
+                            <h1 class="card_title">Conseil RH</h1>
+                            <div class="expertise_img_container"><img class="card_img" src="./img/conseil_rh.png" alt="conseil rh"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn" id="conseil">Découvrir</button>
+                            </div>
+                        </div>
+                        <div class="expertise_card btr" >
+                            <h1 class="card_title">Audit Organisationnel</h1>
+                            <div class="expertise_img_container"><img class="card_img" src="./img/audit.png" alt="conseil rh"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn" id="audit">Découvrir</button>
+                            </div>
+                        </div>
+                        <div class="expertise_card btr" >
+                            <h1 class="card_title">Mise en place d'une gestion RH saine et perenne</h1>
+                            <div class="expertise_img_container"><img class="card_img" src="./img/mise_en_place.png" alt="conseil rh"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn" id="gestion">Découvrir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards_row">
+                        <div class="expertise_card btr" >
+                            <h1 class="card_title">Conformité Légale</h1>
+                            <div class="expertise_img_container"><img class="card_img" src="./img/cadre_juridique.png" alt="conseil rh"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn" id="legal">Découvrir</button>
+                            </div>
+                        </div>
+                        <div class="expertise_card btr" >
+                            <h1 class="card_title">Gouvernance Partagée</h1>
+                            <div class="expertise_img_container"><img class="card_img" src="./img/conseil_rh.png" alt="conseil rh"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn" id="gouvernance">Découvrir</button>
+                            </div>
+                        </div>
+                        <div class="expertise_card btr" >
+                            <h1 class="card_title">Accompagnement individuel</h1>
+                            <div class="expertise_img_container"><img class="card_img" src="./img/conseil_rh.png" alt="conseil rh"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn" id="accompagnement">Découvrir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="values">
+                <h2 class="section_title">Avec quelle approche</h2>
+                <div class="container_cards">
+
+                    <div class="cards_row">
+                        <div class="values_card_container card_to_bottom">
+                            <div class="values_card">
+                                <div class="values_img_container"><img class="card_img" src="./img/pragmatisme.png" alt="conseil rh"></div>
+                                <h1 class="card_title">Du pragmatisme</h1>
+                                <p class="value_tagline">
+                                    Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                        </div>
+                        <div class="values_card_container card_to_top">
+                            <div class="values_card">
+                                <div class="values_img_container"><img class="card_img" src="./img/pragmatisme.png" alt="conseil rh"></div>
+                                <h1 class="card_title">Du sur mesure</h1>
+                                <p class="value_tagline">
+                                    Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                        </div>
+                        <div class="values_card_container card_to_bottom">
+                            <div class="values_card">
+                                <div class="values_img_container"><img class="card_img" src="./img/considération.png" alt="conseil rh"></div>
+                                <h1 class="card_title">De la considération</h1>
+                                <p class="value_tagline">
+                                    Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                        </div>
+                        <div class="values_card_container card_to_top">
+                            <div class="values_card">
+                                <div class="values_img_container"><img class="card_img" src="./img/pragmatisme.png" alt="conseil rh"></div>
+                                <h1 class="card_title">Le souci de la santé et sécurité au travail</h1>
+                                <p class="value_tagline">
+                                    Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                        </div>
+                        <div class="values_card_container card_to_bottom">
+                            <div class="values_card">
+                                <div class="values_img_container"><img class="card_img" src="./img/pragmatisme.png" alt="conseil rh"></div>
+                                <h1 class="card_title">De la disponibilité</h1>
+                                <p class="value_tagline">
+                                    Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="review">
+                <h3 class="section_title">Témoignages</h3>
+                <div class="container_review">
+                <p class="review_quotes">"</p>
+                    <p class="review_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temp</p>
+                
+                <p class="review_quotes">"</p>
+                </div>
+            </section>
+            <div class="footer_bg">
+                <div class="container">
+                    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                        <div class="col mb-3">
+                            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                                <svg class="bi me-2" width="40" height="32">
+                                    <use xlink:href="#bootstrap"></use>
+                                </svg>
+                            </a>
+                            <p class="text-muted">© 2022</p>
+                        </div>
+                        <div class="col mb-3"></div>
+                        <div class="col mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">Home</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">Features</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">Home</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">Features</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">Home</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">Features</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0 text-muted">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
