@@ -1,37 +1,50 @@
-$("#conseil").click(function() {
+
+
+$("#conseil").click(function () {
     window.location.replace('conseil_rh.html');
 })
-$("#audit").click(function() {
+$("#audit").click(function () {
     window.location.replace('audit_organisationnel.html');
 })
-$("#gestion").click(function() {
+$("#gestion").click(function () {
     window.location.replace('gestion.html');
 })
-$("#legal").click(function() {
+$("#legal").click(function () {
     window.location.replace('conformite_legale.html');
 })
-$("#gouvernance").click(function() {
+$("#gouvernance").click(function () {
     window.location.replace('gouvernance_partagee.html');
 })
-$("#accompagnement").click(function() {
+$("#accompagnement").click(function () {
     window.location.replace('accompagnement_individuel.html');
 })
 
 
-$(document).ready(function(){
-    $(".dropdown").hover(function(){
+$(document).ready(function () {
+    $(".dropdown").hover(function () {
         var dropdownMenu = $(this).children(".dropdown-menu");
-        if(dropdownMenu.is(":visible")){
+        if (dropdownMenu.is(":visible")) {
             dropdownMenu.parent().toggleClass("open");
         }
     });
-/*
-let card; 
-$('.expertise_card_wrap').each(function(index){
-    $(this).hover(function(){
-        card = $(this.detach());
-      });
-})
- */   
+    
+    
+$(".flip-card").hover(function(){
 
-  });
+   
+    $(this).find(".flip-card-back")
+    .css('transform', 'perspective(none) rotateY(0)')
+    $(this).find(".flip-card-front")
+    .css('transform', 'perspective(none) rotateY(-180deg)')
+    
+},function(){
+
+    $(this).find(".flip-card-front")
+    .css('transform', 'perspective(none) rotateY(0deg)')
+    $(this).find(".flip-card-back")
+    .css('transform', 'perspective(none) rotateY(180deg)')
+})
+
+
+
+});
