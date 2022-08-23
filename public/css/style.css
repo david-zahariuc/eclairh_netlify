@@ -1,3 +1,4 @@
+
 .center_80 {
     width: 80%;
     margin: 0 auto;
@@ -173,7 +174,7 @@ img {
     height: fit-content;
     padding: 5px 10px;
     /* UI Properties */
-    background: #3C405B 0% 0% no-repeat padding-box;
+    background: #3C405B 0% 0% no-repeat padding-box !important;
     border-radius: 20px;
     opacity: 1;
 }
@@ -373,7 +374,7 @@ img {
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tenor Sans','Poppins', sans-serif;
     font-weight: 600;
     color: #3C405B;
     font-size: 1.5rem;
@@ -387,6 +388,7 @@ img {
     background: transparent linear-gradient(90deg, #FFC000 0%, #FFC60AF3 0%, #FAFE6CCF 100%, #FAFF6F 100%) 0% 0% no-repeat padding-box;
     border-radius: 27px;
     border: 0 transparent;
+    opacity: 1;
 }
 
 .card_btn_container {
@@ -421,9 +423,14 @@ img {
 .flip-card .flip-card-back {
     transform: perspective(none) rotateY(180deg);
     transition: transform .5s linear 0s;
+
+}
+.bg_yellow {
+    background-color: #FECD17;
+}
+.bg_blue {
     background-color: #3C405B;
 }
-
 .card_container {
     margin: 0 25px;
     min-height: 375px;
@@ -456,20 +463,28 @@ img {
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tenor Sans', 'Poppins', sans-serif;
     font-weight: 600;
-    color: #FFD229;
+    min-height: 85px;    
     font-size: 1.25rem;
     letter-spacing: 0px
 }
-
+.yellow{
+    color: #FFD229
+}
+.blue{
+    color: #3C405B;
+}
+.white{
+    color: white;
+}
 .expertise_card_back {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    background: #3C405B 0% 0% no-repeat padding-box;
+    /*background: #3C405B 0% 0% no-repeat padding-box;*/
     box-shadow: 5px 12px 7px #00000029;
     opacity: 1;
     opacity: 1;
@@ -478,15 +493,38 @@ img {
 
 .back_card_description {
     min-height: 125px;
-    text-align: center;
+    opacity: 1;
+}
+.description_title, .description_list{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 0.75rem;
     letter-spacing: 0px;
-    color: #FEFDF6;
-    opacity: 1;
 }
+.description_title{
+    text-align: center;
+}
+.description_list{
+    text-align: left;
+    list-style-type: none;
+}
+.description_list li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+  }
+.card_btn_back{
+    width: 140px;
+    height: 37px;
+    margin: 0 auto !important;
+background-color: #3C405B;    border-radius: 27px;
+    border: 0 transparent;
+    /*color: #FECD17;*/
+    color: #ffffff;
 
+
+}
 /*
   .flip-card-front {
     background-color: #bbb;
@@ -521,15 +559,16 @@ img {
 
 .card_title_val {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tenor Sans', 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0px;
     color: #3C405B;
     text-transform: uppercase;
     opacity: 1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 0 10px;
+    min-height: 50px;
 }
 
 .values_img_container {
@@ -585,7 +624,7 @@ img {
 .card_bottom {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     min-height: 225px;
     background: #FEFDF6 0% 0% no-repeat padding-box;
 
@@ -614,19 +653,17 @@ img {
     padding-right: 3px;
 }
 /*temonaiges*/
-
-.container_review {
-    margin-top: 75px !important;
-
-    margin: 0 auto;
+.container_reviews{
     background: linear-gradient(to top, #E7D7C0, #F4F1DE);
-
+    margin-top: 75px;
+    height: 375px;
+}
+.container_review_item{
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-
-    padding: 100px;
-
 }
+
 
 .review_quotes {
     font-family: 'MS UI Gothic';
@@ -701,5 +738,19 @@ img {
 }
 
 .custom_css {
+    width: 100%;
     background: transparent linear-gradient(180deg, #FEFDF6 0%, #E7D7C0 100%) 0% 0% no-repeat padding-box;
 }
+
+
+/* Nos Solutions */
+.intro {
+    height: 562px
+}
+.bg_sol01{
+    height: 100%;
+background-image: url('./../img/conseilRH.png');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
