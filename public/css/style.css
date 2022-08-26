@@ -297,7 +297,7 @@ img {
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 600;
     color: #3C405B;
@@ -306,7 +306,8 @@ img {
     text-shadow: -2px 2px 2px rgba(230, 215, 191, 0.8);
 }
 
-.section_title::after {
+.section_title::after,
+.section_title_p::after {
     content: '';
     height: 7px;
     position: absolute;
@@ -794,6 +795,77 @@ img {
 }
 
 /* Nos Solutions */
+
+/*Carousel page nos solution */
+.bottom_contr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.contr_over,
+.carousel-indicators {
+    position: relative !important;
+}
+
+.contr_over {
+    width: auto !important;
+}
+
+.carousel-indicators {
+    margin: auto !important;
+}
+
+.carousel-indicators::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #3C405B;
+    z-index: -2;
+}
+
+.indicator_over {
+    width: auto !important;
+    height: auto !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: auto !important;
+    height: auto !important;
+    background-color: transparent !important;
+    text-indent: 0 !important;
+    opacity: 1 !important;
+
+}
+
+.carousel-indicators .active {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    color: #FECD17;
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+
+.carousel-indicators .active::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #FECD17;
+    z-index: -1;
+}
+
+/* fin boostrap overrider */
 .card_title_service {
     width: fit-content;
     margin: 0 auto;
@@ -833,12 +905,15 @@ img {
 }
 
 .title_intro {
-    font: 2.5rem 'Tenor Sans', sans-serif;
+    text-align: center !important;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 2.5rem;
     text-transform: uppercase;
+    line-height: 4rem !important;
 }
 
 .container_img {
-    height: 275px;
+    height: 250px;
 
 }
 
@@ -854,7 +929,13 @@ img {
 }
 
 .container_sub {
-    padding: 75px 100px;
+    padding-top: 75px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.pb_c {
+    padding-bottom: 75px;
 }
 
 .service_subtitle {
@@ -902,15 +983,7 @@ img {
     margin-bottom: 1rem;
 }
 
-.container_subtitle_active::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background-color: #FECD17;
 
-}
 
 .active_title {
     color: #FECD17;
@@ -922,14 +995,16 @@ img {
     position: relative;
 }
 
-.container_subtitle::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background-color: #3C405B;
+.container_subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.container_subtitle_active * {
+    color: #FECD17;
+}
+
 
 /*Footer*/
 
@@ -988,4 +1063,74 @@ img {
     display: flex !important;
     justify-content: flex-start;
     flex-direction: column;
+}
+
+/* Page profile */
+.profile_title {
+    margin: 175px auto 125px 0;
+}
+
+.profile {
+    /* UI Properties */
+    background: transparent linear-gradient(180deg, var(--unnamed-color-e7d7c0) 0%, #FDFCF4 100%, var(--unnamed-color-fefdf6) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #E7D7C0 0%, #FDFCF4 100%, #FEFDF6 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.bt_over {
+    background-color: transparent !important;
+    border: 0;
+}
+
+.section_title_p {
+    position: relative;
+    width: fit-content;
+
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #3C405B;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    text-shadow: -2px 2px 2px rgba(230, 215, 191, 0.8);
+}
+
+.subtitle_p, .subtitle_p_current {
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    opacity: 1;
+    padding-bottom: 1rem;
+}
+
+.subtitle_p::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #3C405B;
+    z-index: -2;
+}
+
+.subtitle_p{
+    color: #3C405B;
+}
+.subtitle_p_current {
+    color: #FECD17;
+}
+
+.subtitle_p_current::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #FECD17;
+    z-index: -2;
 }

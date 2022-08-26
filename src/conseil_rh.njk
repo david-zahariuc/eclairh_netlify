@@ -4,7 +4,7 @@ layout: 'base.njk'
 <main>
 
     <section class="bg_sable">
-        <div class="container col-xxl-8 px-4 pt-5">
+        <div class="container-fluid col-xxl-10 px-4 pt-5">
             <div class="row flex-lg-row-reverse g-5 py-5">
                 <div class="col-lg-6 m-0">
                     <div class="container_img"><img class="d-block ms-auto me-0 img-fluid" src="{{'/img/conseil_page.png' | url}}" alt="Bootstrap Themes" loading="lazy"></div>
@@ -18,28 +18,68 @@ layout: 'base.njk'
     </section>
 
     <section class="service_block">
-
         <div class="container col-xxl-10 px-5 py-5">
-            <div class="row col-6 mx-auto mb-4">
-                <div class="col-4 container_subtitle_active">
-                    <h6 class="subtitle active_title">Titre partie 1</h6>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+                <div class="row col-6 mx-auto mb-4">
+                    <div class="carousel-indicators">
+                        <div class="col-4 container_subtitle">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="subtitle active" aria-current="true" aria-label="Slide 1">Titre partie 1</button>
+                        </div>
+                        <div class="col-4 container_subtitle">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="subtitle" aria-label="Slide 2">Titre partie 2</button>
+                        </div>
+                        <div class="col-4 container_subtitle">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="subtitle" aria-label="Slide 3">Titre partie 3</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4 container_subtitle">
-                    <h6 class="subtitle">Titre partie 2</h6>
+                <div class="bg_sable">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container_sub bg_sable">
+                                <h3 class="service_subtitle">La question pour introduire le sujet pour la partie 1</h3>
+                                <p class="description_subsection">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container_sub bg_sable">
+                                <h3 class="service_subtitle">La question pour introduire le sujet pour la partie 2</h3>
+                                <p class="description_subsection">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container_sub bg_sable">
+                                <h3 class="service_subtitle">La question pour introduire le sujet pour la partie 3</h3>
+                                <p class="description_subsection">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bottom_contr">
+
+                        <button class="carousel-control-prev contr_over" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="prev_arrow" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next contr_over" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="next_arrow" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
                 </div>
-                <div class="col-4 container_subtitle">
-                    <h6 class="subtitle">Titre partie 3</h6>
-                </div>
-            </div>
-            <div class="container_sub bg_sable">
-                <h3 class="service_subtitle">La question pour introduire le sujet pour la partie 1</h3>
-                <p class="description_subsection">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
 
             </div>
         </div>
+        
         <div class="container col-xxl-10 px-5 py-5">
 
-            <div class="container_sub row bg_sable">
+            <div class="container_sub pb_c row bg_sable">
                 <div class="col-4 p-4" style="background: transparent linear-gradient(132deg, #FAFF6F 0%, #FECB13 100%) 0% 0% no-repeat padding-box;">
                 </div>
                 <div class="ps-5 col-8">
@@ -51,8 +91,8 @@ layout: 'base.njk'
 
     </section>
     <section class="expertise">
-    <div class="container col-10 mx-auto">
-        
+        <div class="container col-10 mx-auto">
+
             <div class="container_cards">
                 <div class="cards_single_row">
                     <div class="expertise_card_smaller">
@@ -60,7 +100,7 @@ layout: 'base.njk'
                         <div class="card_b">
                             <div class="expertise_img_container"><img class="card_img" src="/img/audit.png" alt="conseil rh"></div>
                             <div class="card_btn_container">
-                                <button class="card_btn" id="audit">Découvrir</button>
+                                <button class="card_btn audit">En savoir plus</button>
                             </div>
                         </div>
                     </div>
@@ -69,7 +109,7 @@ layout: 'base.njk'
                         <div class="card_b">
                             <div class="expertise_img_container"><img class="card_img" src="/img/mise_en_place.png" alt="conseil rh"></div>
                             <div class="card_btn_container">
-                                <button class="card_btn" id="gestion">Découvrir</button>
+                                <button class="card_btn gestion">En savoir plus</button>
                             </div>
                         </div>
                     </div>
@@ -78,7 +118,7 @@ layout: 'base.njk'
                         <div class="card_b">
                             <div class="expertise_img_container"><img class="card_img" src="/img/cadre_juridique.png" alt="conseil rh"></div>
                             <div class="card_btn_container">
-                                <button class="card_btn" id="legal">Découvrir</button>
+                                <button class="card_btn legal">En savoir plus</button>
                             </div>
                         </div>
                     </div>
@@ -87,7 +127,7 @@ layout: 'base.njk'
                         <div class="card_b">
                             <div class="expertise_img_container sol4"><img class="card_img" src="/img/gouvernance.png" alt="conseil rh"></div>
                             <div class="card_btn_container">
-                                <button class="card_btn" id="gouvernance">Découvrir</button>
+                                <button class="card_btn gouvernance">En savoir plus</button>
                             </div>
                         </div>
                     </div>
@@ -96,13 +136,13 @@ layout: 'base.njk'
                         <div class="card_b">
                             <div class="expertise_img_container"><img class="card_img" src="/img/accomp.png" alt="conseil rh"></div>
                             <div class="card_btn_container">
-                                <button class="card_btn" id="accompagnement">Découvrir</button>
+                                <button class="card_btn accompagnement">En savoir plus</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
     </section>
 
 </main>
