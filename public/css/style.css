@@ -917,15 +917,25 @@ img {
     text-transform: uppercase;
     line-height: 4rem !important;
 }
-
 .container_img {
     height: 375px;
 
 }
-
+.img_wrap_fit{
+    height: fit-content;
+}
+.img_y_fit{
+    height: 100%;
+    width: auto;
+}
+.img_x_fit{
+    width: 100%;
+    height: auto;
+}
+/*
 .container_img>img {
     height: 100% !important;
-}
+}*/
 
 .intro_img {
     display: block;
