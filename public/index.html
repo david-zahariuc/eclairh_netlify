@@ -14,101 +14,172 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
 
 </head>
 
   <body>
-    <header class="sticky-top">
-            <div style="background-color: white; padding: 10px 0">
-                <div class="nav_top">
-                    <div class="nav_top_left">
-                        <div class="logo">
-                            <a href="/"><img class="logo_img" src="/img/logo.svg" alt=""></a>
-                        </div>
-                        <div class="vertical_divider"></div>
-                        <div id="wrapper_tagline">
-                            <h2 id="tagline">Expertise en Ressources Humaines et en Organisation</h2>
-                        </div>
-                    </div>
-                    <div class="nav_top_right">
-                        <!--<div>
-                            <figure class="phone">
-                                <img class="phone_icon" src="/img/phone_icon.svg" alt="">
-                                <figcaption class="phone_no">06 15 90 21 38</figcaption>
-                            </figure>
-                        </div>-->
-                        <div>
-                            <button class="contact_btn">Prendre RDV</button>
-                        </div>
-                    </div>
+    <header class="sticky-top" id="nav_desktop">
+    <div style="background-color: white; padding: 10px 0">
+        <div class="nav_top">
+            <div class="nav_top_left">
+                <div class="logo">
+                    <a href="/"><img class="logo_img" src="/img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="vertical_divider"></div>
+                <div id="wrapper_tagline">
+                    <h2 id="tagline">Expertise en Ressources Humaines et en Organisation</h2>
                 </div>
             </div>
-            <div>
-
-                <nav id="nav_bottom" class="navbar navbar-expand-lg">
-                    <div class="collapse navbar-collapse nav_bottom_order" id="navbarNavDropdown">
-                        <ul class="navbar-nav nav_flex_space_btw">
-                            <li class="nav-item nav_bottom_item">
-                                <a class="nav-link nav_bottom_link" href="/">Accueil</a>
-                            </li>
-                            <li class="nav-item dropdown nav_bottom_item">
-                                <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos solutions</a>
-                                <ul class="dropdown-menu dropdown-menu_over">
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/conseil_rh">Conseil RH</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/audit_organisationnel">Audit Organisationnel</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/gestion">Mise en place d'une gestion RH </br> saine et perenne</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/conformite_legale">Conformité Légale</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/gouvernance_partagee">Gouvernance Partagée</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/accompagnement_individuel">Accompagnement individuel</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown nav_bottom_item">
-                                <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vous êtes</a>
-                                <ul class="dropdown-menu dropdown-menu_over">
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="/entreprise">Entreprise</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="/asso">Association</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="/particulier">Particulier</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="/rep_perso">Représentant du personnel</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item nav_bottom_item">
-                                <a class="nav-link nav_bottom_link" href="#">
-                                À propos de nous
-                                </a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                </nav>
+            <div class="nav_top_right">
+                <!--<div> <figure class="phone"> <img class="phone_icon" src="/img/phone_icon.svg" alt=""> <figcaption class="phone_no">06 15 90 21 38</figcaption> </figure> </div>-->
+                <div>
+                    <button class="contact_btn">Prendre RDV</button>
+                </div>
             </div>
+        </div>
+    </div>
+    <div>
 
-            <!--<div> <ul> <li>Qui sommes nous</li> <li>Expertises</li> <li>Vous étes</li> <li>Fil d'actualités</li> </ul> </div>-->
-        </header>
+        <nav id="nav_bottom" class="navbar navbar-expand-md">
+            <div class="collapse navbar-collapse nav_bottom_order" id="navbarNavDropdown">
+                <ul class="navbar-nav nav_flex_space_btw">
+                    <li class="nav-item nav_bottom_item">
+                        <a class="nav-link nav_bottom_link" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown nav_bottom_item">
+                        <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos solutions</a>
+                        <ul class="dropdown-menu dropdown-menu_over">
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="/conseil_rh">Conseil RH</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="/audit_organisationnel">Audit Organisationnel</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="/gestion">Mise en place d'une gestion RH
+                                </br>
+                                saine et perenne</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="/conformite_legale">Conformité Légale</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="/gouvernance_partagee">Gouvernance Partagée</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="/accompagnement_individuel">Accompagnement individuel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown nav_bottom_item">
+                    <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vous êtes</a>
+                    <ul class="dropdown-menu dropdown-menu_over">
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/entreprise">Entreprise</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/asso">Association</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/particulier">Particulier</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/rep_perso">Représentant du personnel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav_bottom_item">
+                    <a class="nav-link nav_bottom_link" href="#">
+                        À propos de nous
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+</header>
+
+<header class="sticky-top" id="nav_mobile">
+<nav class="navbar navbar-expand-lg bg-ight py-0">
+        <div class="container-fluid px-0">
+            <div class="container-fluid d-flex justify-content-between bg-light py-2">
+                <div class="logo">
+                    <a class="navbar-brand" href="/"><img class="logo_img" src="/img/logo.svg" alt="logo"></a>
+                </div>
+                <button class="navbar-toggler toggler_over" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        <div class="collapse px-4 py-4 navbar-collapse bg_blue" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item  my-2">
+                    <a class="nav-link white" href="/">Accueil</a>
+                </li> 
+                <li class="nav-item  my-2 dropdown">
+                    <a class="nav-link dropdown-toggle white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nos solutions
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="/conseil_rh">Conseil RH</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="/audit_organisationnel">Audit Organisationnel</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="/gestion">Mise en place d'une gestion RH
+                            </br>
+                            saine et perenne</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/conformite_legale">Conformité Légale</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/gouvernance_partagee">Gouvernance Partagée</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/accompagnement_individuel">Accompagnement individuel</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item  my-2 dropdown">
+                <a class="nav-link dropdown-toggle white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Vous êtes
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/entreprise">Entreprise</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/asso">Association</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/particulier">Particulier</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/rep_perso">Représentant du personnel</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item my-2 blue">
+                <a class="nav-link white" href="#">
+                    À propos de nous
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+</nav>
+</header>
 
       
 <main>
     <section class="hero">
-
         <div class="container col-xxl-10 px-4 py-5">
             <div>
                 <h1 class="heading display-5 fw-bold lh-1 mb-3">DU CONSEIL À L'OPERATIONNEL</h1>
@@ -116,412 +187,369 @@
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6"></div>
                 <div class="mt_0 col-lg-6">
-                    <p class="sub_heading lead">EclaiR’H est un cabinet de conseils et d’accompagnement
-qui dédie son savoir-faire en ressources humaines et en organisation,
-à tous les acteurs du monde du travail :
-Entreprises, Associations, particuliers …</p>
-
+                    <p class="sub_heading lead">EclaiR’H est un cabinet de conseils et d’accompagnement qui dédie son savoir-faire en ressources humaines et en organisation, à tous les acteurs du monde du travail : Entreprises, Associations, particuliers …</p>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="expertise" id="expertise_section">
         <div class="container col-xxl-10">
             <h2 class="section_title">Nos solutions</h2>
             <div class="container_cards">
-                <div class="cards_row">
-                    <div class="col-sm flip-card card_container">
-                        <div class="expertise_card_wrap yellow_wrap flip-card-front">
-                            <div class="expertise_card">
-                                <h1 class="card_title">Conseil RH</h1>
-                                <div>
-                                    <div class="expertise_img_container"><img class="card_img" src="./img/conseil_rh.png" alt="conseil rh"></div>
-                                    <div class="card_btn_container">
-                                        <button class="card_btn conseil">En savoir plus</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expertise_card_back flip-card-back bg_yellow">
-                            <div>
-                                <h1 class="back_card_title blue">Conseil RH</h1>
-                                <div class="back_card_description blue">
-                                    <p class="description_title">Ponctuel ou permanent<br>
-Un véritable support à l'adresse des :</p>
-                                    <ul class="description_list">
-                                        <li>Entreprises</li>
-                                        <li>Associations</li>
-                                        <li>Particuliers</li>
-                                        <li>IRP</li>
-                                        <li>Médecins (généralistes, du travail)</li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card_btn_container">
-                                <button class="card_btn_back conseil">En savoir plus</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm flip-card card_container">
-                        <div class="expertise_card_wrap blue_wrap flip-card-front">
-                            <div class="expertise_card">
-                                <h1 class="card_title">Audit Organisationnel</h1>
-                                <div>
-                                    <div class="expertise_img_container"><img class="card_img" src="./img/audit.png" alt="conseil rh"></div>
-                                    <div class="card_btn_container">
-                                        <button class="card_btn audit">En savoir plus</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expertise_card_back flip-card-back bg_blue">
-                            <div>
-                                <h1 class="back_card_title yellow">Audit Organisationnel</h1>
-                                <div class="back_card_description white">
-                                    <p class="description_title">Phase indispensable pour tous ceux qui cherchent à améliorer leur organisation :</p>
-                                    <ul class="description_list">
-                                        <li>Etat des lieux complet / Analyse 360°</li>
-                                        <li>Projection cible</li>
-                                        <li>Préconisations et feuille de route</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card_btn_container">
-                                <button class="card_btn audit">En savoir plus</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm flip-card card_container">
-                        <div class="expertise_card_wrap yellow_wrap flip-card-front">
-                            <div class="expertise_card">
-                                <h1 class="card_title">Mise en place d'une gestion RH saine et perenne</h1>
-                                <div>
-                                    <div class="expertise_img_container"><img class="card_img" src="./img/mise_en_place.png" alt="conseil rh"></div>
-                                    <div class="card_btn_container">
-                                        <button class="card_btn gestion">En savoir plus</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expertise_card_back flip-card-back bg_yellow">
-                            <div>
-                                <h1 class="back_card_title blue">Mise en place d'une gestion RH saine et perenne</h1>
-
-                                <div class="back_card_description blue">
-                                    <p class="description_title">Transmettre notre savoir-faire par des outils et de la formation</p>
-                                    <ul class="description_list">
-                                        <li>Référentiels RH</li>
-                                        <li>Tableaux de bord</li>
-                                        <li>Montée en compétence des ressources</li>
-                                        <li>GPEC, gestion prévisionnelle des emplois et compétences</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card_btn_container">
-                                <button class="card_btn_back gestion">En savoir plus</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cards_row">
-                    <div class="col-sm flip-card card_container">
-                        <div class="expertise_card_wrap blue_wrap flip-card-front">
-                            <div class="expertise_card">
-                                <h1 class="card_title">Conformité Légale</h1>
-                                <div>
-                                    <div class="expertise_img_container"><img class="card_img" src="./img/cadre_juridique.png" alt="conseil rh"></div>
-                                    <div class="card_btn_container">
-                                        <button class="card_btn legal">En savoir plus</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expertise_card_back flip-card-back bg_blue">
-                            <div>
-                                <h1 class="back_card_title yellow">Conformité Légale</h1>
-
-                                <div class="back_card_description white">
-                                    <p class="description_title">Sécuriser vos pratiques RH et votre cadre légal</p>
-                                    <ul class="description_list">
-                                        <li>Gestion du temps de travail</li>
-                                        <li>Contrats de travail</li>
-                                        <li>Documents obligatoires</li>
-                                        <li>Convention et accords collectifs</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="card_btn_container">
-                                <button class="card_btn legal">En savoir plus</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm flip-card card_container">
-                        <div class="expertise_card_wrap yellow_wrap flip-card-front">
-                            <div class="expertise_card">
-                                <h1 class="card_title">Structurer la Gouvernance Partagée</h1>
-                                <div>
-                                    <div class="expertise_img_container"><img class="card_img sol05_img" src="./img/gouvernance.png" alt="conseil rh"></div>
-                                    <div class="card_btn_container">
-                                        <button class="card_btn gouvernance">En savoir plus</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expertise_card_back flip-card-back bg_yellow">
-                            <div>
-                                <h1 class="back_card_title">Gouvernance Partagée</h1>
-
-                                <div class="back_card_description blue">
-                                    <p class="description_title">Accompagner les modèles de gouvernance au sein du Monde Associatif et d’organisations</p>
-                                    <ul class="description_list">
-                                        <li>Structuration de l’organisation</li>
-                                        <li>Clarification des rôles</li>
-                                        <li>Formalisation des pratiques</li>
-                                        <li>Création d’outils sur mesure</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card_btn_container">
-                                <button class="card_btn_back gouvernance">En savoir plus</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm flip-card card_container">
-                        <div class="expertise_card_wrap blue_wrap flip-card-front">
-                            <div class="expertise_card flip-card-front">
-                                <h1 class="card_title">Accompagnement individuel</h1>
-                                <div>
-                                    <div class="expertise_img_container"><img class="card_img" src="./img/accomp.png" alt="conseil rh"></div>
-                                    <div class="card_btn_container">
-                                        <button class="card_btn accompagnement">En savoir plus</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expertise_card_back flip-card-back bg_blue">
-                            <div>
-                                <h1 class="back_card_title yellow">Accompagnement individuel</h1>
-                                <div class="back_card_description white">
-                                    <p class="description_title">Vous aider par des solutions concrètes et sur mesure</p>
-                                    <ul class="description_list">
-                                        <li>Gestion de carrière</li>
-                                        <li>Projet de transition professionnelle</li>
-                                        <li>Gestion d’une problématique au travail</li>
-                                        <li>Souffrance au travail</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card_btn_container">
-                                <button class="card_btn accompagnement">En savoir plus</button>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="flip-card card_container" style="order:6;">
+    <div class="expertise_card_wrap flip-card-front blue_wrap">
+        <div class="expertise_card">
+            <h1 class="card_title">Accompagnement individuel</h1>
+            <div class="expertise_img_container"><img class="img_y_fit" src="/img/accomp.png" alt="Accompagnement individuel"></div>
+            <div>
+                <div class="card_btn_container">
+                    <button class="card_btn accompagnement">En savoir plus</button>
                 </div>
             </div>
-        </section>
-        <section class="values">
-            <div class="container col-xxl-10">
-                <h2 class="section_title">Nos engagements</h2>
-                <div class="container_cards_val">
-                    <div class="cards_row">
-                        <div class="col values_card_container">
-                            <div class="values_card">
-                                <div class="values_img_container"><img class="val_card_img val01_img" src="./img/pragmatisme.png" alt="conseil rh"></div>
-                                <div class="custom_pe yellow_wrap">
-                                    <div class="card_bottom">
-                                        <h1 class="card_title_val">Pragmatisme</h1>
-                                        <p class="value_tagline">
-                                            Orientés résultats, nos méthodes visent des réponses concrètes et ajustées au réel.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col values_card_container">
-                            <div class="values_card">
+        </div>
+    </div>
+    <div class="expertise_card_back flip-card-back bg_blue">
+        <div>
+            <h1 class="back_card_title yellow">Accompagnement individuel</h1>
+            <div class="back_card_description white">
+                <div class="mb-3"><p class="description_title">Vous aider par des solutions concrètes et sur mesure</p></div>
 
-                                <div class="values_img_container"><img class="val_card_img val02_img" src="./img/sur_mesure.png" alt="conseil rh"></div>
-                                <div class="custom_pe blue_wrap">
-                                    <div class="card_bottom">
-                                        <h1 class="card_title_val">Sur mesure</h1>
-                                        <p class="value_tagline">
-                                            Chaque accompagnement est construit de manière personnalisée tant dans le conseil que dans la création d’outils uniques.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col values_card_container">
-                            <div class="values_card">
+                <ul class="description_list"><li>Gestion de carrière</li><li>Projet de transition professionnelle</li><li>Gestion d’une problématique au travail</li><li>Souffrance au travail</li></ul>
+            </div>
+        </div>
+        <div class="card_btn_container">
+            <button class="card_btn accompagnement">En savoir plus</button>
+        </div>
+    </div>
+</div><div class="flip-card card_container" style="order:2;">
+    <div class="expertise_card_wrap flip-card-front blue_wrap">
+        <div class="expertise_card">
+            <h1 class="card_title">Audit Organisationnel</h1>
+            <div class="expertise_img_container"><img class="img_y_fit" src="/img/audit.png" alt="Accompagnement individuel"></div>
+            <div>
+                <div class="card_btn_container">
+                    <button class="card_btn audit">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expertise_card_back flip-card-back bg_blue">
+        <div>
+            <h1 class="back_card_title yellow">Audit Organisationnel</h1>
+            <div class="back_card_description white">
+                <div class="mb-3"><p class="description_title">Phase indispensable pour tous ceux qui cherchent à améliorer leur organisation :</p></div>
 
-                                <div class="values_img_container"><img class="val_card_img val03_img" src="./img/consideration.png" alt="conseil rh"></div>
-                                <div class="custom_pe yellow_wrap">
-                                    <div class="card_bottom">
-                                        <h1 class="card_title_val">Considération</h1>
-                                        <p class="value_tagline">
-                                            Valeur phare de notre approche, chacun de nos accompagnements considère la dimension humaine et la recherche de sa réalisation satisfaisante et durable.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col values_card_container">
-                            <div class="values_card">
+                <ul class="description_list"><li>Etat des lieux complet / Analyse 360°</li><li>Projection cible</li><li>Gestion d’une problématique au travail</li><li>Préconisations et feuille de route</li></ul>
+            </div>
+        </div>
+        <div class="card_btn_container">
+            <button class="card_btn audit">En savoir plus</button>
+        </div>
+    </div>
+</div><div class="flip-card card_container" style="order:4;">
+    <div class="expertise_card_wrap flip-card-front blue_wrap">
+        <div class="expertise_card">
+            <h1 class="card_title">Conformité Légale</h1>
+            <div class="expertise_img_container"><img class="img_y_fit" src="/img/cadre_juridique.png" alt="Conformité Légale"></div>
+            <div>
+                <div class="card_btn_container">
+                    <button class="card_btn legal">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expertise_card_back flip-card-back bg_blue">
+        <div>
+            <h1 class="back_card_title yellow">Conformité Légale</h1>
+            <div class="back_card_description white">
+                <div class="mb-3"><p class="description_title">Sécuriser vos pratiques RH et votre cadre légal</p></div>
 
-                                <div class="values_img_container"><img class="val_card_img val04_img" src="./img/sante.png" alt="conseil rh"></div>
-                                <div class="custom_pe blue_wrap">
-                                    <div class="card_bottom">
-                                        <h1 class="card_title_val">La santé au travail</h1>
-                                        <p class="value_tagline">Plus qu’une formule, une incarnation dans notre démarche et notre savoir-faire.</br>Nous œuvrons pour un mieux-être du monde du travail, dans l’intérêt de tous.</br>
-                                </p>
+                <ul class="description_list"><li>Gestion du temps de travail</li><li>Contrats de travail</li><li>Documents obligatoires</li><li>Convention et accords collectifs</li></ul>
+            </div>
+        </div>
+        <div class="card_btn_container">
+            <button class="card_btn legal">En savoir plus</button>
+        </div>
+    </div>
+</div><div class="flip-card card_container" style="order:1;">
+    <div class="expertise_card_wrap flip-card-front yellow_wrap">
+        <div class="expertise_card">
+            <h1 class="card_title">Conseil RH</h1>
+            <div class="expertise_img_container"><img class="img_y_fit" src="/img/conseil_rh.png" alt="Conseil RH"></div>
+            <div>
+                <div class="card_btn_container">
+                    <button class="card_btn conseil">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expertise_card_back flip-card-back bg_yellow">
+        <div>
+            <h1 class="back_card_title blue">Conseil RH</h1>
+            <div class="back_card_description blue">
+                <div class="mb-3"><p class="description_title">Ponctuel ou permanent</p><p class="description_title">Un véritable support à l&#39;adresse des :</p></div>
+
+                <ul class="description_list"><li>Entreprises</li><li>Associations</li><li>Particuliers</li><li>IRP</li><li>Médecins (généralistes, du travail)</li></ul>
+            </div>
+        </div>
+        <div class="card_btn_container">
+            <button class="card_btn_back conseil">En savoir plus</button>
+        </div>
+    </div>
+</div><div class="flip-card card_container" style="order:3;">
+    <div class="expertise_card_wrap flip-card-front yellow_wrap">
+        <div class="expertise_card">
+            <h1 class="card_title">Mise en place d&#39;une gestion RH saine et perenne</h1>
+            <div class="expertise_img_container"><img class="img_y_fit" src="/img/mise_en_place.png" alt="gestion RH"></div>
+            <div>
+                <div class="card_btn_container">
+                    <button class="card_btn gestion">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expertise_card_back flip-card-back bg_yellow">
+        <div>
+            <h1 class="back_card_title blue">Mise en place d&#39;une gestion RH saine et perenne</h1>
+            <div class="back_card_description blue">
+                <div class="mb-3"><p class="description_title">Transmettre notre savoir-faire par des outils et de la formation</p></div>
+
+                <ul class="description_list"><li>Référentiels RH</li><li>Tableaux de bord</li><li>Montée en compétence des ressources</li><li>GPEC, gestion prévisionnelle des emplois et compétences</li></ul>
+            </div>
+        </div>
+        <div class="card_btn_container">
+            <button class="card_btn_back gestion">En savoir plus</button>
+        </div>
+    </div>
+</div><div class="flip-card card_container" style="order:5;">
+    <div class="expertise_card_wrap flip-card-front yellow_wrap">
+        <div class="expertise_card">
+            <h1 class="card_title">Structurer la Gouvernance Partagée</h1>
+            <div class="expertise_img_container"><img class="img_x_fit" src="/img/gouvernance.png" alt="Gouvernance Partagée"></div>
+            <div>
+                <div class="card_btn_container">
+                    <button class="card_btn gouvernance">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expertise_card_back flip-card-back bg_yellow">
+        <div>
+            <h1 class="back_card_title blue">Structurer la Gouvernance Partagée</h1>
+            <div class="back_card_description blue">
+                <div class="mb-3"><p class="description_title">Accompagner les modèles de gouvernance au sein du Monde Associatif et d’organisations</p></div>
+
+                <ul class="description_list"><li>Structuration de l’organisation</li><li>Clarification des rôles</li><li>Formalisation des pratiques</li><li>Création d’outils sur mesure</li></ul>
+            </div>
+        </div>
+        <div class="card_btn_container">
+            <button class="card_btn_back gouvernance">En savoir plus</button>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+    <section class="values">
+        <div class="container col-xxl-10">
+            <h2 class="section_title">Nos engagements</h2>
+            <div class="container_cards_val">
+                <div class="values_card_container">
+                    <div class="values_card">
+                        <div class="values_img_container">
+                            <img class="val_card_img val01_img" src="./img/pragmatisme.png" alt="Pragmatisme">
+                        </div>
+                        <div class="custom_pe yellow_wrap">
+                            <div class="card_bottom">
+                                <h1 class="card_title_val">Pragmatisme</h1>
+                                <p class="value_tagline">
+                                    Orientés résultats, nos méthodes visent des réponses concrètes et ajustées au réel.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col values_card_container">
+                <div class="values_card_container">
+                    <div class="values_card">
+                        <div class="values_img_container">
+                            <img class="val_card_img val02_img" src="./img/sur_mesure.png" alt="Sur mesure">
+                        </div>
+                        <div class="custom_pe blue_wrap">
+                            <div class="card_bottom">
+                                <h1 class="card_title_val">Sur mesure</h1>
+                                <p class="value_tagline">
+                                    Chaque accompagnement est construit de manière personnalisée tant dans le conseil que dans la création d’outils uniques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="values_card_container">
                     <div class="values_card">
 
-                        <div class="values_img_container"><img class="val_card_img val05_img" src="./img//dispo.png" alt="conseil rh"></div>
-                        <div>
+                        <div class="values_img_container">
+                            <img class="val_card_img val03_img" src="./img/consideration.png" alt="Considération">
+                        </div>
+                        <div class="custom_pe yellow_wrap">
                             <div class="card_bottom">
-                                <h1 class="card_title_val">Disponibilité</h1>
-                                <p class="value_tagline">Totalement investis avec vous,
-c’est votre situation qui fixe notre calendrier.</p>
+                                <h1 class="card_title_val">Considération</h1>
+                                <p class="value_tagline">
+                                    Valeur phare de notre approche, chacun de nos accompagnements considère la dimension humaine et la recherche de sa réalisation satisfaisante et durable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="values_card_container">
+                    <div class="values_card">
+
+                        <div class="values_img_container">
+                            <img class="val_card_img val04_img" src="./img/sante.png" alt="La santé au travail">
+                        </div>
+                        <div class="custom_pe blue_wrap">
+                            <div class="card_bottom">
+                                <h1 class="card_title_val">La santé au travail</h1>
+                                <p class="value_tagline">Plus qu’une formule, une incarnation dans notre démarche et notre savoir-faire.</p>
+                                <p class="value_tagline">Nous œuvrons pour un mieux-être du monde du travail, dans l’intérêt de tous.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="values_card_container">
+                    <div class="values_card">
+
+                        <div class="values_img_container">
+                            <img class="val_card_img val04_img" src="./img/dispo.png" alt="DISPONIBILITÉ">
+                        </div>
+                        <div class="custom_pe yellow_wrap">
+                            <div class="card_bottom">
+                                <h1 class="card_title_val">DISPONIBILITÉ</h1>
+                                <p class="value_tagline">Totalement investis avec vous, c’est votre situation qui fixe notre calendrier.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="review">
-    <div class="container col-xxl-10">
+    </section>
+    <section class="review">
+        <div class="container col-xxl-10">
 
-        <h3 class="section_title">Témoignages</h3>
-        <div class="container_reviews p-5">
+            <h3 class="section_title">Témoignages</h3>
+            <div class="container_reviews p-5">
 
-            <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
-                <div class="carousel-inner w-75 mx-auto">
-                    <div class="carousel-item  active" data-bs-interval="10000">
-                        <div class="container_review_item">
-                            <p class="review_quotes">"</p>
-                            <div>
-                                <p class="review_text">
-                                    EclaiR'H a su accompagner notre Association sur l'organisation de notre cogestion et les périmètres des responsabilités de notre équipe CA et salariées. Le cabinet nous a aussi accompagnées dans l'organisation du travail en lien avec les règles en vigueur et a su s'adapter à notre mode de fonctionnement et de prise de décision. EclaiR'H a pu, à la fois créer des outils pratiques qui ont pu être mis en oeuvre, mais aussi des formations adaptées auprès de l'équipe.
-</p>
-                                <p class="review_text" style="text-align: right !important">Nathalie EB</br>
-Mouvement Français du Planning Familial</br>
-Présidente de l'AD 69</p>
-                            </div>
-                            <p class="review_quotes">"</p>
+                <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-inner w-75 mx-auto">
+                        <div class="carousel-item  active" data-bs-interval="10000">
+                            <div class="container_review_item">
+                                <p class="review_quotes">"</p>
+                                <div>
+                                    <p class="review_text">
+                                        EclaiR'H a su accompagner notre Association sur l'organisation de notre cogestion et les périmètres des responsabilités de notre équipe CA et salariées. Le cabinet nous a aussi accompagnées dans l'organisation du travail en lien avec les règles en vigueur et a su s'adapter à notre mode de fonctionnement et de prise de décision. EclaiR'H a pu, à la fois créer des outils pratiques qui ont pu être mis en oeuvre, mais aussi des formations adaptées auprès de l'équipe.
+                                    </p>
+                                    <p class="review_text" style="text-align: right !important">Nathalie EB</br>
+                                    Mouvement Français du Planning Familial</br>
+                                Présidente de l'AD 69</p>
                         </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <div class="container_review_item">
-                            <p class="review_quotes">"</p>
-                            <div>
-                                <p class="review_text">Humain, Pragmatique et Efficace. Un accompagnement dans mon projet de reconversion bien au-delà de mes attentes! J’ai été accompagnée par une consultante à l’écoute, experte en RH et surtout efficace. Je la remercie pour ses qualités humaines, son talent pour comprendre les personnes, les valoriser et les aider à avancer. Elle m’a permis de structurer mon projet de reconversion professionnelle jusqu’à l’obtention du CDI.</p>
-                                <p class="review_text" style="text-align: right !important">Karoline K</p>
-                            </div>
-                            <p class="review_quotes">"</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <div class="container_review_item">
-                            <p class="review_quotes">"</p>
-                            <div>
-                                <p class="review_text">
-                                    Gérant d’un salon de coiffure, EclaiR'H m’a accompagné dans la prévention de litiges. J’ai pu obtenir des réponses concrètes à mes questions en matière de gestion de mes salariés. Ses conseils avisés ont permis de désamorcer des conflits sans passer par la case avocat et ce à des tarifs ultra compétitifs ! Je recommande à 100%</p>
-                                <p class="review_text" style="text-align: right !important">SEMELDI</p>
-                            </div>
-                            <p class="review_quotes">"</p>
-                        </div>
+                        <p class="review_quotes">"</p>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="prev_arrow" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="next_arrow" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="container_review_item">
+                        <p class="review_quotes">"</p>
+                        <div>
+                            <p class="review_text">Humain, Pragmatique et Efficace. Un accompagnement dans mon projet de reconversion bien au-delà de mes attentes! J’ai été accompagnée par une consultante à l’écoute, experte en RH et surtout efficace. Je la remercie pour ses qualités humaines, son talent pour comprendre les personnes, les valoriser et les aider à avancer. Elle m’a permis de structurer mon projet de reconversion professionnelle jusqu’à l’obtention du CDI.</p>
+                            <p class="review_text" style="text-align: right !important">Karoline K</p>
+                        </div>
+                        <p class="review_quotes">"</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="container_review_item">
+                        <p class="review_quotes">"</p>
+                        <div>
+                            <p class="review_text">
+                                Gérant d’un salon de coiffure, EclaiR'H m’a accompagné dans la prévention de litiges. J’ai pu obtenir des réponses concrètes à mes questions en matière de gestion de mes salariés. Ses conseils avisés ont permis de désamorcer des conflits sans passer par la case avocat et ce à des tarifs ultra compétitifs ! Je recommande à 100%</p>
+                            <p class="review_text" style="text-align: right !important">SEMELDI</p>
+                        </div>
+                        <p class="review_quotes">"</p>
+                    </div>
+                </div>
             </div>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="prev_arrow" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="next_arrow" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-        <!-- <div class="container_review"> <p class="review_quotes">"</p> <p class="review_text"> Samia MAROUF a su accompagner notre association sur l'organisation de notre cogestion et les périmètres des responsabilités de notre équipe CA et salariées. Elle nous a aussi accompagnées dans l'organisation du travail en lien avec les règles en vigueur. Elle a su s'adapter à notre mode de fonctionnement et de prise de décision. Elle a pu à la fois créer des outils pratiques qui ont pu être mis en oeuvre mais aussi des formations adaptées auprès de l'équipe.</p> <p class="review_quotes">"</p> </div> -->
     </div>
+
+    <!-- <div class="container_review"> <p class="review_quotes">"</p> <p class="review_text"> Samia MAROUF a su accompagner notre association sur l'organisation de notre cogestion et les périmètres des responsabilités de notre équipe CA et salariées. Elle nous a aussi accompagnées dans l'organisation du travail en lien avec les règles en vigueur. Elle a su s'adapter à notre mode de fonctionnement et de prise de décision. Elle a pu à la fois créer des outils pratiques qui ont pu être mis en oeuvre mais aussi des formations adaptées auprès de l'équipe.</p> <p class="review_quotes">"</p> </div> -->
+</div>
 </section>
 <div class="footer_bg">
-    <div class="container"></div>
+<div class="container"></div>
 </div>
 </main>
 
-    <footer class="py-5 my-5 g-0 custom_css">
-    <div class="container col-xxl-10 row mx-auto">
-        <div class="col-3 px-3 mb-4 footer_col">
+    <footer class="py-5 g-0 custom_css">
+    <div class="container col-xxl-10 d-flex justify-content-center flex-wrap mx-auto">
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
             <div class="mb-2 pb-3">
-                <a href="/blog" class="nav-link p-0 text-center text-muted title_col_foot">Contact</a>
+                <a href="/blog" class="nav-link pb-3 text-center text-muted title_col_foot">Contact</a>
+                <p class="footer_adress">contact@eclairh.fr</p>
+
             </div>
 
             <div>
                 <h6 class="adress">Notre adresse</h6>
-                <p class="footer_adress">3 rue de Genève, Lyon</p>
+                <p class="footer_adress">3 Rue de Genève 69006 Lyon</p>
             </div>
-            <div class="logo_footer">
-                <a href="/">
-                    <img class="logo_img" src="/img/logo.svg" alt="">
-                </a>
-            </div>
+
         </div>
-        <div class="col-3 px-3 mb-4 footer_col">
-            <h5 class="title_col_foot">Nos solutions</h5>
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+            <p class="title_col_foot text-center">Nos solutions</p>
             <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                    <a href="/conseil_rh" class="nav-link p-0 text-muted nav_link_foot">Conseil RH</a>
+                    <a href="/conseil_rh" class="text-center nav-link p-0 text-muted nav_link_foot">Conseil RH</a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="/audit_organisationnel" class="nav-link p-0 text-muted nav_link_foot">Audit Organisationnel</a>
+                    <a href="/audit_organisationnel" class="text-center nav-link p-0 text-muted nav_link_foot">Audit Organisationnel</a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="/gestion" class="nav-link p-0 text-muted nav_link_foot">Mise en place d'une gestion RH
+                    <a href="/gestion" class="text-center nav-link p-0 text-muted nav_link_foot">Mise en place d'une gestion RH
                     </br>
                     saine et perenne</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/conformite_legale" class="text-center nav-link p-0 text-muted nav_link_foot">Conformité Légale</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/gouvernance_partagee" class="text-center nav-link p-0 text-muted nav_link_foot">Gouvernance Partagée</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/accompagnement_individuel" class="text-center nav-link p-0 text-muted nav_link_foot">Accompagnement individuel</a>
+                </li>
+        </ul>
+    </div>
+    <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="/blog" class="text-center nav-link p-0 text-muted title_col_foot">Fil d'actualités</a>
             </li>
             <li class="nav-item mb-2">
-                <a href="/conformite_legale" class="nav-link p-0 text-muted nav_link_foot">Conformité Légale</a>
-            </li>
-            <li class="nav-item mb-2">
-                <a href="/gouvernance_partagee" class="nav-link p-0 text-muted nav_link_foot">Gouvernance Partagée</a>
-            </li>
-            <li class="nav-item mb-2">
-                <a href="/accompagnement_individuel" class="nav-link p-0 text-muted nav_link_foot">Accompagnement individuel</a>
+                <a href="/blog" class="text-center nav-link p-0 text-muted title_col_foot">Mention légales</a>
             </li>
         </ul>
     </div>
-    <div class="col-3 px-3 mb-4 footer_col">
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-                <a href="/" class="nav-link p-0 text-muted nav_link_foot">Accueil</a>
-            </li>
-            <li class="nav-item mb-2">
-                <a href="/profile" class="nav-link p-0 text-muted nav_link_foot">Vous etes</a>
-            </li>
-            <li class="nav-item mb-2">
-                <a href="/about" class="nav-link p-0 text-muted nav_link_foot">A propos de nous</a>
-            </li>
-
-        </ul>
-    </div>
-    <div class="col-3 px-3 mb-4 footer_col">
-        <ul class="nav flex-column">
-
-            <li class="nav-item mb-2">
-                <a href="/blog" class="nav-link p-0 text-muted title_col_foot">Fil d'actualités</a>
-            </li>
-        </ul </div>
+    <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+        <div class="logo_footer">
+            <a href="/">
+                <img class="logo_img" src="/img/logo.svg" alt="">
+            </a>
+        </div>
     </div>
 
     <!--<div class="col mb-3"> <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none"> <svg class="bi me-2" width="40" height="32"> <use xlink:href="#bootstrap"></use> </svg> </a> <p class="text-muted">© 2022</p> </div>-->

@@ -1,86 +1,156 @@
-<header class="sticky-top">
-            <div style="background-color: white; padding: 10px 0">
-                <div class="nav_top">
-                    <div class="nav_top_left">
-                        <div class="logo">
-                            <a href="{{'/' | url }}"><img class="logo_img" src="{{'/img/logo.svg' | url}}" alt=""></a>
-                        </div>
-                        <div class="vertical_divider"></div>
-                        <div id="wrapper_tagline">
-                            <h2 id="tagline">Expertise en Ressources Humaines et en Organisation</h2>
-                        </div>
-                    </div>
-                    <div class="nav_top_right">
-                        <!--<div>
-                            <figure class="phone">
-                                <img class="phone_icon" src="/img/phone_icon.svg" alt="">
-                                <figcaption class="phone_no">06 15 90 21 38</figcaption>
-                            </figure>
-                        </div>-->
-                        <div>
-                            <button class="contact_btn">Prendre RDV</button>
-                        </div>
-                    </div>
+<header class="sticky-top" id="nav_desktop">
+    <div style="background-color: white; padding: 10px 0">
+        <div class="nav_top">
+            <div class="nav_top_left">
+                <div class="logo">
+                    <a href="{{'/' | url }}"><img class="logo_img" src="{{'/img/logo.svg' | url}}" alt="logo"></a>
+                </div>
+                <div class="vertical_divider"></div>
+                <div id="wrapper_tagline">
+                    <h2 id="tagline">Expertise en Ressources Humaines et en Organisation</h2>
                 </div>
             </div>
-            <div>
-
-                <nav id="nav_bottom" class="navbar navbar-expand-lg">
-                    <div class="collapse navbar-collapse nav_bottom_order" id="navbarNavDropdown">
-                        <ul class="navbar-nav nav_flex_space_btw">
-                            <li class="nav-item nav_bottom_item">
-                                <a class="nav-link nav_bottom_link" href="{{'/' | url}}">Accueil</a>
-                            </li>
-                            <li class="nav-item dropdown nav_bottom_item">
-                                <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos solutions</a>
-                                <ul class="dropdown-menu dropdown-menu_over">
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="{{'/conseil_rh' | url}}">Conseil RH</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="{{'/audit_organisationnel' | url}}">Audit Organisationnel</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="{{'/gestion' | url}}">Mise en place d'une gestion RH </br> saine et perenne</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="{{'/conformite_legale' | url}}">Conformité Légale</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="{{'/gouvernance_partagee' | url}}">Gouvernance Partagée</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="{{'/accompagnement_individuel' | url}}">Accompagnement individuel</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown nav_bottom_item">
-                                <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vous êtes</a>
-                                <ul class="dropdown-menu dropdown-menu_over">
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="{{'/entreprise' | url}}">Entreprise</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="{{'/asso' | url}}">Association</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="{{'/particulier' | url}}">Particulier</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="{{'/rep_perso' | url}}">Représentant du personnel</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item nav_bottom_item">
-                                <a class="nav-link nav_bottom_link" href="#">
-                                À propos de nous
-                                </a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                </nav>
+            <div class="nav_top_right">
+                <!--<div> <figure class="phone"> <img class="phone_icon" src="/img/phone_icon.svg" alt=""> <figcaption class="phone_no">06 15 90 21 38</figcaption> </figure> </div>-->
+                <div>
+                    <button class="contact_btn">Prendre RDV</button>
+                </div>
             </div>
+        </div>
+    </div>
+    <div>
 
-            <!--<div> <ul> <li>Qui sommes nous</li> <li>Expertises</li> <li>Vous étes</li> <li>Fil d'actualités</li> </ul> </div>-->
-        </header>
+        <nav id="nav_bottom" class="navbar navbar-expand-md">
+            <div class="collapse navbar-collapse nav_bottom_order" id="navbarNavDropdown">
+                <ul class="navbar-nav nav_flex_space_btw">
+                    <li class="nav-item nav_bottom_item">
+                        <a class="nav-link nav_bottom_link" href="{{'/' | url}}">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown nav_bottom_item">
+                        <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos solutions</a>
+                        <ul class="dropdown-menu dropdown-menu_over">
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="{{'/conseil_rh' | url}}">Conseil RH</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="{{'/audit_organisationnel' | url}}">Audit Organisationnel</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="{{'/gestion' | url}}">Mise en place d'une gestion RH
+                                </br>
+                                saine et perenne</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="{{'/conformite_legale' | url}}">Conformité Légale</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="{{'/gouvernance_partagee' | url}}">Gouvernance Partagée</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="{{'/accompagnement_individuel' | url}}">Accompagnement individuel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown nav_bottom_item">
+                    <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vous êtes</a>
+                    <ul class="dropdown-menu dropdown-menu_over">
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="{{'/entreprise' | url}}">Entreprise</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="{{'/asso' | url}}">Association</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="{{'/particulier' | url}}">Particulier</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="{{'/rep_perso' | url}}">Représentant du personnel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav_bottom_item">
+                    <a class="nav-link nav_bottom_link" href="#">
+                        À propos de nous
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+</header>
+
+<header class="sticky-top" id="nav_mobile">
+<nav class="navbar navbar-expand-lg bg-ight py-0">
+        <div class="container-fluid px-0">
+            <div class="container-fluid d-flex justify-content-between bg-light py-2">
+                <div class="logo">
+                    <a class="navbar-brand" href="{{'/' | url }}"><img class="logo_img" src="{{'/img/logo.svg' | url}}" alt="logo"></a>
+                </div>
+                <button class="navbar-toggler toggler_over" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        <div class="collapse px-4 py-4 navbar-collapse bg_blue" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item  my-2">
+                    <a class="nav-link white" href="{{'/' | url}}">Accueil</a>
+                </li> 
+                <li class="nav-item  my-2 dropdown">
+                    <a class="nav-link dropdown-toggle white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nos solutions
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="{{'/conseil_rh' | url}}">Conseil RH</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="{{'/audit_organisationnel' | url}}">Audit Organisationnel</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="{{'/gestion' | url}}">Mise en place d'une gestion RH
+                            </br>
+                            saine et perenne</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="{{'/conformite_legale' | url}}">Conformité Légale</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="{{'/gouvernance_partagee' | url}}">Gouvernance Partagée</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="{{'/accompagnement_individuel' | url}}">Accompagnement individuel</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item  my-2 dropdown">
+                <a class="nav-link dropdown-toggle white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Vous êtes
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="{{'/entreprise' | url}}">Entreprise</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="{{'/asso' | url}}">Association</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="{{'/particulier' | url}}">Particulier</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="{{'/rep_perso' | url}}">Représentant du personnel</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item my-2 blue">
+                <a class="nav-link white" href="#">
+                    À propos de nous
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+</nav>
+</header>

@@ -1,0 +1,65 @@
+
+   header {
+    display: none;
+}
+.card_container, .values_card_container{
+    width: 90%;
+}
+.container_cards_val {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.values_card_container{
+    padding: 1rem;
+}
+
+.container_cards_val {
+    justify-content: center;
+
+}
+
+@media only screen and (min-width: 576px) {
+    
+ 
+    /* cards responsive sm */
+    .card_container, .values_card_container {
+        min-height: 400px;
+        width: 75%;
+    }
+    .sol05_img{
+        width: 100%;
+        height: auto;
+    }
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .card_container, .values_card_container{
+        width: 42%;
+    }
+    .container_cards_val {
+        justify-content: space-between;
+
+    }
+}
+@media only screen and (min-width: 992px) {
+    .card_container, .values_card_container{
+        width: 44%;
+    }
+   
+}
+@media only screen and (min-width: 1200px) {
+    .card_container{
+        width: 28%;
+    }
+    .values_card_container{
+        width: 20%;
+
+    }
+    .values_card_container{
+        padding: 0;
+    }
+    
+}

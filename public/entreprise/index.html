@@ -14,96 +14,168 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
 
 </head>
 
   <body>
-    <header class="sticky-top">
-            <div style="background-color: white; padding: 10px 0">
-                <div class="nav_top">
-                    <div class="nav_top_left">
-                        <div class="logo">
-                            <a href="/"><img class="logo_img" src="/img/logo.svg" alt=""></a>
-                        </div>
-                        <div class="vertical_divider"></div>
-                        <div id="wrapper_tagline">
-                            <h2 id="tagline">Expertise en Ressources Humaines et en Organisation</h2>
-                        </div>
-                    </div>
-                    <div class="nav_top_right">
-                        <!--<div>
-                            <figure class="phone">
-                                <img class="phone_icon" src="/img/phone_icon.svg" alt="">
-                                <figcaption class="phone_no">06 15 90 21 38</figcaption>
-                            </figure>
-                        </div>-->
-                        <div>
-                            <button class="contact_btn">Prendre RDV</button>
-                        </div>
-                    </div>
+    <header class="sticky-top" id="nav_desktop">
+    <div style="background-color: white; padding: 10px 0">
+        <div class="nav_top">
+            <div class="nav_top_left">
+                <div class="logo">
+                    <a href="/"><img class="logo_img" src="/img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="vertical_divider"></div>
+                <div id="wrapper_tagline">
+                    <h2 id="tagline">Expertise en Ressources Humaines et en Organisation</h2>
                 </div>
             </div>
-            <div>
-
-                <nav id="nav_bottom" class="navbar navbar-expand-lg">
-                    <div class="collapse navbar-collapse nav_bottom_order" id="navbarNavDropdown">
-                        <ul class="navbar-nav nav_flex_space_btw">
-                            <li class="nav-item nav_bottom_item">
-                                <a class="nav-link nav_bottom_link" href="/">Accueil</a>
-                            </li>
-                            <li class="nav-item dropdown nav_bottom_item">
-                                <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos solutions</a>
-                                <ul class="dropdown-menu dropdown-menu_over">
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/conseil_rh">Conseil RH</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/audit_organisationnel">Audit Organisationnel</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/gestion">Mise en place d'une gestion RH </br> saine et perenne</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/conformite_legale">Conformité Légale</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/gouvernance_partagee">Gouvernance Partagée</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over " href="/accompagnement_individuel">Accompagnement individuel</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown nav_bottom_item">
-                                <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vous êtes</a>
-                                <ul class="dropdown-menu dropdown-menu_over">
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="/entreprise">Entreprise</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="/asso">Association</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="/particulier">Particulier</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-item_over" href="/rep_perso">Représentant du personnel</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item nav_bottom_item">
-                                <a class="nav-link nav_bottom_link" href="#">
-                                À propos de nous
-                                </a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                </nav>
+            <div class="nav_top_right">
+                <!--<div> <figure class="phone"> <img class="phone_icon" src="/img/phone_icon.svg" alt=""> <figcaption class="phone_no">06 15 90 21 38</figcaption> </figure> </div>-->
+                <div>
+                    <button class="contact_btn">Prendre RDV</button>
+                </div>
             </div>
+        </div>
+    </div>
+    <div>
 
-            <!--<div> <ul> <li>Qui sommes nous</li> <li>Expertises</li> <li>Vous étes</li> <li>Fil d'actualités</li> </ul> </div>-->
-        </header>
+        <nav id="nav_bottom" class="navbar navbar-expand-md">
+            <div class="collapse navbar-collapse nav_bottom_order" id="navbarNavDropdown">
+                <ul class="navbar-nav nav_flex_space_btw">
+                    <li class="nav-item nav_bottom_item">
+                        <a class="nav-link nav_bottom_link" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown nav_bottom_item">
+                        <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos solutions</a>
+                        <ul class="dropdown-menu dropdown-menu_over">
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="/conseil_rh">Conseil RH</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="/audit_organisationnel">Audit Organisationnel</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="/gestion">Mise en place d'une gestion RH
+                                </br>
+                                saine et perenne</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="/conformite_legale">Conformité Légale</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="/gouvernance_partagee">Gouvernance Partagée</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="/accompagnement_individuel">Accompagnement individuel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown nav_bottom_item">
+                    <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vous êtes</a>
+                    <ul class="dropdown-menu dropdown-menu_over">
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/entreprise">Entreprise</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/asso">Association</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/particulier">Particulier</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/rep_perso">Représentant du personnel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav_bottom_item">
+                    <a class="nav-link nav_bottom_link" href="#">
+                        À propos de nous
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+</header>
+
+<header class="sticky-top" id="nav_mobile">
+<nav class="navbar navbar-expand-lg bg-ight py-0">
+        <div class="container-fluid px-0">
+            <div class="container-fluid d-flex justify-content-between bg-light py-2">
+                <div class="logo">
+                    <a class="navbar-brand" href="/"><img class="logo_img" src="/img/logo.svg" alt="logo"></a>
+                </div>
+                <button class="navbar-toggler toggler_over" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        <div class="collapse px-4 py-4 navbar-collapse bg_blue" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item  my-2">
+                    <a class="nav-link white" href="/">Accueil</a>
+                </li> 
+                <li class="nav-item  my-2 dropdown">
+                    <a class="nav-link dropdown-toggle white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nos solutions
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="/conseil_rh">Conseil RH</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="/audit_organisationnel">Audit Organisationnel</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="/gestion">Mise en place d'une gestion RH
+                            </br>
+                            saine et perenne</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/conformite_legale">Conformité Légale</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/gouvernance_partagee">Gouvernance Partagée</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/accompagnement_individuel">Accompagnement individuel</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item  my-2 dropdown">
+                <a class="nav-link dropdown-toggle white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Vous êtes
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/entreprise">Entreprise</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/asso">Association</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/particulier">Particulier</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/rep_perso">Représentant du personnel</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item my-2 blue">
+                <a class="nav-link white" href="#">
+                    À propos de nous
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+</nav>
+</header>
 
       <main>
     <section class="profile">
@@ -228,69 +300,62 @@
     </section>
 </main>
 
-    <footer class="py-5 my-5 g-0 custom_css">
-    <div class="container col-xxl-10 row mx-auto">
-        <div class="col-3 px-3 mb-4 footer_col">
+    <footer class="py-5 g-0 custom_css">
+    <div class="container col-xxl-10 d-flex justify-content-center flex-wrap mx-auto">
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
             <div class="mb-2 pb-3">
-                <a href="/blog" class="nav-link p-0 text-center text-muted title_col_foot">Contact</a>
+                <a href="/blog" class="nav-link pb-3 text-center text-muted title_col_foot">Contact</a>
+                <p class="footer_adress">contact@eclairh.fr</p>
+
             </div>
 
             <div>
                 <h6 class="adress">Notre adresse</h6>
-                <p class="footer_adress">3 rue de Genève, Lyon</p>
+                <p class="footer_adress">3 Rue de Genève 69006 Lyon</p>
             </div>
-            <div class="logo_footer">
-                <a href="/">
-                    <img class="logo_img" src="/img/logo.svg" alt="">
-                </a>
-            </div>
+
         </div>
-        <div class="col-3 px-3 mb-4 footer_col">
-            <h5 class="title_col_foot">Nos solutions</h5>
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+            <p class="title_col_foot text-center">Nos solutions</p>
             <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                    <a href="/conseil_rh" class="nav-link p-0 text-muted nav_link_foot">Conseil RH</a>
+                    <a href="/conseil_rh" class="text-center nav-link p-0 text-muted nav_link_foot">Conseil RH</a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="/audit_organisationnel" class="nav-link p-0 text-muted nav_link_foot">Audit Organisationnel</a>
+                    <a href="/audit_organisationnel" class="text-center nav-link p-0 text-muted nav_link_foot">Audit Organisationnel</a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="/gestion" class="nav-link p-0 text-muted nav_link_foot">Mise en place d'une gestion RH
+                    <a href="/gestion" class="text-center nav-link p-0 text-muted nav_link_foot">Mise en place d'une gestion RH
                     </br>
                     saine et perenne</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/conformite_legale" class="text-center nav-link p-0 text-muted nav_link_foot">Conformité Légale</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/gouvernance_partagee" class="text-center nav-link p-0 text-muted nav_link_foot">Gouvernance Partagée</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/accompagnement_individuel" class="text-center nav-link p-0 text-muted nav_link_foot">Accompagnement individuel</a>
+                </li>
+        </ul>
+    </div>
+    <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="/blog" class="text-center nav-link p-0 text-muted title_col_foot">Fil d'actualités</a>
             </li>
             <li class="nav-item mb-2">
-                <a href="/conformite_legale" class="nav-link p-0 text-muted nav_link_foot">Conformité Légale</a>
-            </li>
-            <li class="nav-item mb-2">
-                <a href="/gouvernance_partagee" class="nav-link p-0 text-muted nav_link_foot">Gouvernance Partagée</a>
-            </li>
-            <li class="nav-item mb-2">
-                <a href="/accompagnement_individuel" class="nav-link p-0 text-muted nav_link_foot">Accompagnement individuel</a>
+                <a href="/blog" class="text-center nav-link p-0 text-muted title_col_foot">Mention légales</a>
             </li>
         </ul>
     </div>
-    <div class="col-3 px-3 mb-4 footer_col">
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-                <a href="/" class="nav-link p-0 text-muted nav_link_foot">Accueil</a>
-            </li>
-            <li class="nav-item mb-2">
-                <a href="/profile" class="nav-link p-0 text-muted nav_link_foot">Vous etes</a>
-            </li>
-            <li class="nav-item mb-2">
-                <a href="/about" class="nav-link p-0 text-muted nav_link_foot">A propos de nous</a>
-            </li>
-
-        </ul>
-    </div>
-    <div class="col-3 px-3 mb-4 footer_col">
-        <ul class="nav flex-column">
-
-            <li class="nav-item mb-2">
-                <a href="/blog" class="nav-link p-0 text-muted title_col_foot">Fil d'actualités</a>
-            </li>
-        </ul </div>
+    <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+        <div class="logo_footer">
+            <a href="/">
+                <img class="logo_img" src="/img/logo.svg" alt="">
+            </a>
+        </div>
     </div>
 
     <!--<div class="col mb-3"> <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none"> <svg class="bi me-2" width="40" height="32"> <use xlink:href="#bootstrap"></use> </svg> </a> <p class="text-muted">© 2022</p> </div>-->
