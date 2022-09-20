@@ -1205,7 +1205,8 @@ img {
 }
 
 input,
-textarea {
+textarea,
+select {
     width: 100%;
     background: #FEFDF6 0% 0% no-repeat padding-box;
     border: 1px solid #FFD229;
@@ -1214,7 +1215,7 @@ textarea {
 }
 
 input::placeholder,
-textarea::placeholder {
+textarea::placeholder, select:first-child {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;

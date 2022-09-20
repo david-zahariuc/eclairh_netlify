@@ -211,7 +211,7 @@
         </div>
         <div class="contact_form px-5">
             <h6 class="section_title mb-5">Formulaire</h6>
-            <form action="#" method="post" name="contact-page" data-netlify="true">
+            <form action="#" method="post" name="contact-page" data-netlify="true" data-netlify-recaptcha="true">
 
                 <div class="form_container">
                     <div>
@@ -231,12 +231,13 @@
                     </div>
                 </div>
                 <div>
-                    <input type="checkbox" name="appointment">
+                    <!--<input type="checkbox" name="appointment">-->
                 </div>
                 <div>
                     <div><input type="date" name="date" placeholder="Quel jour?"></div>
                     <div>
-                    <select name="hourly_intervals" placeholder="Vos disponibilités ?">
+                    <select name="hourly_intervals">
+                    <option value="">Vos disponibilités ?</option>
                     <option value="morning">Matin</option>
                     <option value="afternoon">Apres Midi</option>
                     </select>
