@@ -10,12 +10,16 @@
     box-shadow: none !important;
 }
 @media only screen and (max-width: 768px) {
+    .heading {
+        font: 1.9rem 'Tenor Sans', serif;    
+    }
     #nav_mobile {
         display: block;
     }
     #nav_desktop{
         display: none;
     }
+    
 }
 .card_container,
 .values_card_container {

@@ -1,0 +1,70 @@
+---
+layout: 'base.njk'
+---
+<section class="contact_bg"></section>
+<section>
+    <div class="container_form col-xxl-10">
+        <div class="map px-5">
+            <h6 class="section_title mb-5">Contact</h6>
+            <div class="map_container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5728.988058241853!2d4.855532740630789!3d45.77224196202124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb6e26c6fbef%3A0x4c02ef275b8b2000!2sEclair&#39;h!5e0!3m2!1sro!2sfr!4v1663669935135!5m2!1sro!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="info_container">
+                <div class="mb-5">
+                    <p class="contact_info">
+                        <span>Où nous retrouver:
+                        </span>{{settings.address}}
+                    </p>
+                    <p class="contact_info">
+                        <span>Pour nous contacter de vive voix:
+                        </span> {{settings.phone}}
+                    </p>
+                    <p class="contact_info">
+                        <span>Ou bien par mail:
+                        </span>{{settings.email}}
+                    </p>
+                </div>
+                <div class="mp-5">
+                    <p class="contact_info">
+                        Vous pouvez également nous retrouver sur LinkdIn:
+                    </p>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact_form px-5">
+            <h6 class="section_title mb-5">Formulaire</h6>
+            <form action="">
+
+                <div class="form_container">
+                    <div>
+                        <input type="text" placeholder="Nom">
+                    </div>
+                    <div>
+                        <input type="mail" placeholder="Adresse mail">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Téléphone">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Sujet">
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Votre message"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <div><input type="date" placeholder="Quel jour?"></div>
+                    <div><input type="select" placeholder="Creneux horaire"></div>
+                </div>
+                <div>
+                    <button type="submit" class="send_btn">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

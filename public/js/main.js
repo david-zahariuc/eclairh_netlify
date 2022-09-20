@@ -31,8 +31,10 @@ $(".rep_perso").click(function () {
 $(".entreprise").click(function () {
     window.location.replace('/entreprise');
 })
-
-
+/*contact btn*/
+$(".contact_btn").click(function () {
+    window.location.replace("/contact");
+})
 
 $(document).ready(function () {
 
@@ -53,10 +55,8 @@ if ($(window).width() < 576) {
         }
     });
     
-    
 $(".flip-card").hover(function(){
-
-   
+ 
     $(this).find(".flip-card-back")
     .css('transform', 'perspective(none) rotateY(0)')
     $(this).find(".flip-card-front")
@@ -69,8 +69,6 @@ $(".flip-card").hover(function(){
     $(this).find(".flip-card-back")
     .css('transform', 'perspective(none) rotateY(180deg)')
 })
-
-
 
 });
 

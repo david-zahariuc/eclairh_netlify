@@ -1,5 +1,9 @@
 body {
     background-color: #FEFDF6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 img {
@@ -116,6 +120,7 @@ img {
     opacity: 1;
     border: transparent;
 }
+
 /**/
 
 /* Style navigation dropdown */
@@ -930,7 +935,7 @@ img {
 }
 
 .img_y_fit {
-    height:70%;
+    height: 70%;
     width: auto;
     display: block;
     margin-left: auto;
@@ -1169,4 +1174,88 @@ img {
     width: 100%;
     background-color: #FECD17;
     z-index: -2;
+}
+
+
+/*          CONTACT PAGE        */
+
+.contact_bg {
+    height: 175px;
+    background: transparent linear-gradient(180deg, #E7D7C0 0%, #FEFDF6 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.container_form {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6.25rem;
+}
+
+.map_container {
+    height: 475px;
+}
+
+.map,
+.contact_form {
+    width: 50%;
+}
+
+input,
+textarea {
+    width: 100%;
+    background: #FEFDF6 0% 0% no-repeat padding-box;
+    border: 1px solid #FFD229;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #FFD229;
+    opacity: 1;
+}
+
+.send_btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #FEFDF6;
+    opacity: 1;
+    background: #3C405B 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    opacity: 1;
+    border: 0 transparent;
+}
+.info_container {
+    padding: 6.25rem;
+}
+.contact_info {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: normal;
+letter-spacing: 0px;
+color: #3C405B;
+}
+.contact_info span {
+    color: #FFD229;
+
 }
