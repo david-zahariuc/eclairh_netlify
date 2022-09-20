@@ -376,6 +376,7 @@ img {
     align-items: center;
     height: 100px;
     margin-bottom: 2rem;
+    justify-content: center;
 }
 
 .card_img {
@@ -937,7 +938,7 @@ img {
 }
 
 .img_x_fit {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
     margin-left: auto;
