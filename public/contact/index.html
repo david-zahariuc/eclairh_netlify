@@ -211,31 +211,36 @@
         </div>
         <div class="contact_form px-5">
             <h6 class="section_title mb-5">Formulaire</h6>
-            <form action="">
+            <form action="#" method="post" name="contact-page" data-netlify="true">
 
                 <div class="form_container">
                     <div>
-                        <input type="text" placeholder="Nom">
+                        <input type="text" name="name" placeholder="Nom">
                     </div>
                     <div>
-                        <input type="mail" placeholder="Adresse mail">
+                        <input type="mail" name="email" placeholder="Adresse mail">
                     </div>
                     <div>
-                        <input type="text" placeholder="Téléphone">
+                        <input type="text" name="phone" placeholder="Téléphone">
                     </div>
                     <div>
-                        <input type="text" placeholder="Sujet">
+                        <input type="text" name="subject" placeholder="Sujet">
                     </div>
                     <div>
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Votre message"></textarea>
+                        <textarea name="message" cols="30" rows="5" placeholder="Votre message"></textarea>
                     </div>
                 </div>
                 <div>
-                    <input type="checkbox">
+                    <input type="checkbox" name="appointment">
                 </div>
                 <div>
-                    <div><input type="date" placeholder="Quel jour?"></div>
-                    <div><input type="select" placeholder="Creneux horaire"></div>
+                    <div><input type="date" name="date" placeholder="Quel jour?"></div>
+                    <div>
+                    <select name="hourly_intervals" placeholder="Vos disponibilités ?">
+                    <option value="morning">Matin</option>
+                    <option value="afternoon">Apres Midi</option>
+                    </select>
+                    </div>
                 </div>
                 <div>
                     <button type="submit" class="send_btn">Envoyer</button>
