@@ -33,7 +33,19 @@ $(".entreprise").click(function () {
 })
 
 
+
 $(document).ready(function () {
+
+    /* responsive images */
+if ($(window).width() < 576) {
+    $(".fit_img").addClass("img-fluid");
+    $(".fit_img").removeClass("img_y_fit");
+    } else {
+        $(".fit_img").removeClass("img-fluid");
+        $(".fit_img").addClass("img_y_fit");
+    
+    }
+
     $(".dropdown").hover(function () {
         var dropdownMenu = $(this).children(".dropdown-menu");
         if (dropdownMenu.is(":visible")) {
@@ -61,3 +73,4 @@ $(".flip-card").hover(function(){
 
 
 });
+

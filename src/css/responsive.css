@@ -36,6 +36,10 @@
     justify-content: center;
 
 }
+/*
+@media only screen and (min-width: 576px) {
+
+}*/
 
 @media only screen and (min-width: 576px) {
 
@@ -91,4 +95,14 @@
         padding: 0;
     }
 
+}
+@media only screen and (min-width: 1400px) {
+    .img_y_fit{
+        height: 80%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .img_y_fit{
+        height: 90%;
+    }
 }
