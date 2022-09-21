@@ -10,6 +10,18 @@
     box-shadow: none !important;
 }
 @media only screen and (max-width: 768px) {
+    
+    .container_img{
+        height: 150px;
+    }
+    .container_subtitle{
+        width: 80%;
+    }
+    .title_intro{
+        font-size: 1.6rem;
+        line-height: 3rem !important;
+
+    }
     .heading {
         font: 1.9rem 'Tenor Sans', serif;    
     }
@@ -59,6 +71,9 @@
         width: 100%;
         height: auto;
     }
+    .expertise_card_smaller{
+        width: 50%;
+    }
 
 
 }
@@ -69,7 +84,9 @@
     .values_card_container {
         width: 42%;
     }
-
+    .expertise_card_smaller{
+        width: 33%;
+    }
     .container_cards_val {
         justify-content: space-between;
 
@@ -82,6 +99,9 @@
     .values_card_container {
         width: 44%;
     }
+    .expertise_card_smaller{
+        width: 33%;
+    }
 
 }
 
@@ -89,7 +109,9 @@
     .card_container {
         width: 28%;
     }
-
+    .expertise_card_smaller{
+        width: 20%;
+    }
     .values_card_container {
         width: 20%;
 

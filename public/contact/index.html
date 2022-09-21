@@ -179,8 +179,8 @@
 
       <section class="contact_bg"></section>
 <section>
-    <div class="container_form col-xxl-10">
-        <div class="map px-5">
+    <div class="container_form col-xxl-10 d-flex flex-wrap">
+        <div class="col col-md-6 map px-5">
             <h6 class="section_title mb-5">Contact</h6>
             <div class="map_container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5728.988058241853!2d4.855532740630789!3d45.77224196202124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb6e26c6fbef%3A0x4c02ef275b8b2000!2sEclair&#39;h!5e0!3m2!1sro!2sfr!4v1663669935135!5m2!1sro!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -209,34 +209,34 @@
                 </div>
             </div>
         </div>
-        <div class="contact_form px-5">
+        <div class="col col-md-6 contact_form px-5">
             <h6 class="section_title mb-5">Formulaire</h6>
-            <form action="#" method="post" name="contact-page" data-netlify="true" data-netlify-recaptcha="true">
+            <form action="#" method="post" name="contact-page" data-netlify="true">
 
                 <div class="form_container">
                     <div>
-                        <input type="text" name="name" placeholder="Nom">
+                        <input type="text" name="nom" placeholder="Nom">
                     </div>
                     <div>
                         <input type="mail" name="email" placeholder="Adresse mail">
                     </div>
                     <div>
-                        <input type="text" name="phone" placeholder="Téléphone">
+                        <input type="text" name="telephone" placeholder="Téléphone">
                     </div>
                     <div>
-                        <input type="text" name="subject" placeholder="Sujet">
+                        <input type="text" name="subjet" placeholder="Sujet">
                     </div>
                     <div>
                         <textarea name="message" cols="30" rows="5" placeholder="Votre message"></textarea>
                     </div>
                 </div>
                 <div>
-                    <!--<input type="checkbox" name="appointment">-->
+                    <input type="checkbox" name="appointment" checked=false>
                 </div>
                 <div>
-                    <div><input type="date" name="date" placeholder="Quel jour?"></div>
+                    <div><input disable=true type="text" name="date" placeholder="Quel jour ?" onfocus="(this.type='date')"></div>
                     <div>
-                    <select name="hourly_intervals">
+                    <select name="creneau_horaire" disabled=true>
                     <option value="">Vos disponibilités ?</option>
                     <option value="morning">Matin</option>
                     <option value="afternoon">Apres Midi</option>
@@ -255,7 +255,7 @@
     <div class="container col-xxl-10 d-flex justify-content-center flex-wrap mx-auto">
         <div class="col-10 col-md-3 px-3 mb-4 footer_col">
             <div class="mb-2 pb-3">
-                <a href="/blog" class="nav-link pb-3 text-center text-muted title_col_foot">Contact</a>
+                <a href="/contact/" class="nav-link pb-3 text-center text-muted title_col_foot">Contact</a>
                 <p class="footer_adress">contact@eclairh.fr</p>
 
             </div>
