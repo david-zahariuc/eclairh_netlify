@@ -6,12 +6,13 @@ layout: 'base.njk'
         <div class="container col-xxl-10 px-4 py-5">
 
             <div class="profile_title px-5">
-                <h3 class="section_title_p">Vous êtes ?</h3>
+                <h3 class="section_title_p">Vous êtes une Entreprise</h3>
+                <p class="sub_heading">Voici les solutions que nous vous proposons pour vous accompagner et soutenir la gestion de votre structure.</p>
 
             </div>
         </section>
-        <section class="px-5 pb-5"></div>
-        <div class="row mx-auto pb-5 mb-5">
+        <section class="px-1 pb-5 px-sm-5"></div>
+        <div class="d-flex flex-wrap justify-content-center col-10 mx-auto mb-5">
             <div class="col-3 container_subtitle px-0">
                 <button type="button" class="subtitle_p_current bt_over entreprise">Entreprise</button>
             </div>
@@ -29,96 +30,45 @@ layout: 'base.njk'
 
         <div class="container col-xxl-10">
 
-            <div class="cards_row">
-                <div class="col-sm flip-card card_container">
-                    <div class="expertise_card_wrap blue_wrap flip-card-front">
-                        <div class="expertise_card">
-                            <h1 class="card_title">Audit Organisationnel</h1>
-                            <div>
-                                <div class="expertise_img_container"><img class="card_img" src="/img/audit.png" alt="conseil rh"></div>
-                                <div class="card_btn_container">
-                                    <button class="card_btn audit">En savoir plus</button>
+            <div class="container_cards">
+                {%- for entreprise_cards in collections.entreprise_cards -%}
+                    <div class="flip-card card_container" style="{{entreprise_cards.data.cardOrder}}">
+                        <div class="expertise_card_wrap flip-card-front {{entreprise_cards.data.wrapColor}}">
+                            <div class="expertise_card">
+                                <h1 class="card_title">{{entreprise_cards.data.title}}</h1>
+                                <div class="expertise_img_container"><img class="{{entreprise_cards.data.imgClass}}" src="{{entreprise_cards.data.image}}" alt="{{entreprise_cards.data.altImage}}"></div>
+                                <div>
+                                    <div class="card_btn_container">
+                                        <button class="card_btn {{entreprise_cards.data.jqueryClass}}">En savoir plus</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="expertise_card_back flip-card-back bg_blue">
-                        <div>
-                            <h1 class="back_card_title yellow">Audit Organisationnel</h1>
-                            <div class="back_card_description white">
-                                <p class="description_title">Phase indispensable pour tous ceux qui cherchent à améliorer leur organisation :</p>
-                                <ul class="description_list">
-                                    <li>Etat des lieux complet / Analyse 360°</li>
-                                    <li>Projection cible</li>
-                                    <li>Préconisations et feuille de route</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card_btn_container">
-                            <button class="card_btn audit">En savoir plus</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm flip-card card_container">
-                    <div class="expertise_card_wrap yellow_wrap flip-card-front">
-                        <div class="expertise_card">
-                            <h1 class="card_title">Mise en place d'une gestion RH saine et perenne</h1>
+                        <div class="expertise_card_back flip-card-back {{entreprise_cards.data.bgColor}}">
                             <div>
-                                <div class="expertise_img_container"><img class="card_img" src="/img/mise_en_place.png" alt="conseil rh"></div>
-                                <div class="card_btn_container">
-                                    <button class="card_btn gestion">En savoir plus</button>
+                                <h1 class="back_card_title {{entreprise_cards.data.backTitleColor}}">{{entreprise_cards.data.title}}</h1>
+                                <div class="back_card_description {{entreprise_cards.data.textColor}}">
+                                    <div class="mb-3">
+                                        {%- for item in entreprise_cards.data.description -%}
+                                            <p class="description_title">{{item}}</p>
+                                        {%- endfor -%}
+                                    </div>
+
+                                    <ul class="description_list">
+                                        {%- for item in entreprise_cards.data.descriptionListItem -%}
+                                            <li>{{item}}</li>
+                                        {%- endfor -%}
+
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="expertise_card_back flip-card-back bg_yellow">
-                        <div>
-                            <h1 class="back_card_title blue">Mise en place d'une gestion RH saine et perenne</h1>
-                            <div class="back_card_description blue">
-                                <p class="description_title">Transmettre notre savoir-faire par des outils et de la formation</p>
-                                <ul class="description_list">
-                                    <li>Référentiels RH</li>
-                                    <li>Tableaux de bord</li>
-                                    <li>Montée en compétence des ressources</li>
-                                    <li>GPEC, gestion prévisionnelle des emplois et compétences</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card_btn_container">
-                            <button class="card_btn_back gestion">En savoir plus</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm flip-card card_container">
-                    <div class="expertise_card_wrap blue_wrap flip-card-front">
-                        <div class="expertise_card">
-                            <h1 class="card_title">Conformité Légale</h1>
-                            <div>
-                                <div class="expertise_img_container"><img class="card_img" src="/img/cadre_juridique.png" alt="conseil rh"></div>
-                                <div class="card_btn_container">
-                                    <button class="card_btn legal">En savoir plus</button>
-                                </div>
+                            <div class="card_btn_container">
+                                <button class="{{entreprise_cards.data.buttonBack}} {{entreprise_cards.data.jqueryClass}}">En savoir plus</button>
                             </div>
                         </div>
                     </div>
-                    <div class="expertise_card_back flip-card-back bg_blue">
-                        <div>
-                            <h1 class="back_card_title yellow">Conformité Légale</h1>
-                            <div class="back_card_description white">
-                                <p class="description_title">Sécuriser vos pratiques RH et votre cadre légal</p>
-                                <ul class="description_list">
-                                    <li>Gestion du temps de travail</li>
-                                    <li>Contrats de travail</li>
-                                    <li>Documents obligatoires</li>
-                                    <li>Convention et accords collectifs</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card_btn_container">
-                            <button class="card_btn legal">En savoir plus</button>
-                        </div>
-                    </div>
-                </div>
+                {%- endfor -%}
+
             </div>
         </div>
     </section>

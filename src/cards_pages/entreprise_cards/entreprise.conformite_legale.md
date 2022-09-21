@@ -1,0 +1,16 @@
+---
+tags: entreprise_cards
+cardOrder: order:4;
+wrapColor: blue_wrap
+title: Conformité Légale
+image: /img/cadre_juridique.png
+imgClass: h-100
+altImage: Conformité Légale
+jqueryClass: legal
+bgColor:  bg_blue
+backTitleColor: yellow
+textColor: white
+description: ["Sécuriser vos pratiques RH et votre cadre légal"]
+descriptionListItem: ["Gestion du temps de travail","Contrats de travail", "Documents obligatoires","Convention et accords collectifs"]
+buttonBack: card_btn
+---

@@ -1,0 +1,16 @@
+---
+tags: entreprise_cards
+cardOrder: order:5;
+wrapColor: yellow_wrap
+title: Structurer la Gouvernance Partagée
+image: /img/gouvernance.png
+imgClass: img_x_fit
+altImage: Gouvernance Partagée
+jqueryClass: gouvernance
+bgColor:  bg_yellow
+backTitleColor: blue
+textColor: blue
+description: ["Accompagner les modèles de gouvernance au sein du Monde Associatif et d’organisations"]
+descriptionListItem: ["Structuration de l’organisation","Clarification des rôles", "Formalisation des pratiques","Création d’outils sur mesure"]
+buttonBack: card_btn_back
+---

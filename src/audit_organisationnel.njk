@@ -11,7 +11,8 @@ layout: 'base.njk'
                 </div>
                 <div class="col-lg-6 mt-2 mt-sm-5">
                     <h1 class="display-5 fw-bold lh-1 mb-3 title_intro">Audit Organisationnel</h1>
-
+                    <p class="mx-5 description_subsection">Curabitur in eros turpis. Nulla sed sem consectetur, faucibus neque quis, bibendum lacus. Curabitur elementum nisl diam, at aliquet enim finibus in.
+                    </p>
                 </div>
             </div>
         </div>
@@ -39,7 +40,7 @@ layout: 'base.njk'
                         <div class="carousel-item active">
                             <div class="container_sub bg_sable">
                                 <h3 class="service_subtitle">Vous apporter de la hauteur</h3>
-                                
+
                                 <p class="description_subsection">Véritable travail de profondeur, d’observation détaillée, l’audit consiste, par la voie de notre Cabinet, à apporter un regard neuf et objectif sur le fonctionnement administratif et managérial de votre organisation en réalisant
                                     <strong>un diagnostic à 360°</strong>
                                     de votre structure :</p>
@@ -62,8 +63,10 @@ layout: 'base.njk'
                         </div>
                         <div class="carousel-item">
                             <div class="container_sub bg_sable">
-                               
-                                <p class="description_subsection">Nous intervenons auprès de votre structure pour apporter la proximité qui est nécessaire à une vision globale de l’organisation. C’est <strong>une période d’immersion</strong> pour s’imprégner de votre structure et de son identité.</p>
+
+                                <p class="description_subsection">Nous intervenons auprès de votre structure pour apporter la proximité qui est nécessaire à une vision globale de l’organisation. C’est
+                                    <strong>une période d’immersion</strong>
+                                    pour s’imprégner de votre structure et de son identité.</p>
                                 <p class="description_subsection text-decoration-underline fw-bold">Un état des lieux :</p>
                                 <p class="description_subsection">La première étape pour réaliser l’audit organisationnel consiste en un état des lieux en recensant toutes sortes d’informations:</p>
                                 <ul class="subsection_list description_subsection">
@@ -113,7 +116,7 @@ layout: 'base.njk'
 
             <div class="container_sub pb_c bg_sable">
                 <div class="col col-md-4">
-                    <div class="mx-3 px-3 py-3 px-sm-5 py-sm-5 h-100" style="background: transparent linear-gradient(132deg, #FAFF6F 0%, #FECB13 100%) 0% 0% no-repeat padding-box;"">
+                    <div class="mx-3 px-3 py-3 px-sm-5 py-sm-5 h-100" style="background: transparent linear-gradient(132deg, #FAFF6F 0%, #FECB13 100%) 0% 0% no-repeat padding-box;" ">
                         <p class="text-center">Votre organisation a besoin d'être:</p>
                         <ul class="subsection_list p-0">
                             <li>Clarifiée</li>
@@ -123,25 +126,34 @@ layout: 'base.njk'
                     </div>
                 </div>
                 <div class="col col-md-8">
-                    <div class="mx-3 px-3 py-3 px-sm-5 py-sm-5 bg_blue h-100">
-                        <p class="white mb-5">Profitez d'un regard expert es objectif pour reprendre la maîtrise de votre gestion et lui donner un nouvel élan à votre organisation.</p>
-                    <div>
-                        <button class="card_btn">Contactez-nous</button>
+                    <div class="mx-3 px-3 py-3 px-sm-5 py-sm-5 h-100">
+                        <p class="blue mb-5">Profitez d'un regard expert es objectif pour reprendre la maîtrise de votre gestion et lui donner un nouvel élan à votre organisation.</p>
+                        <div>
+                            <button class="blue_btn send_btn">Contactez-nous</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-</section>
-<section class="expertise">
-    <div class="container col-10 mx-auto">
+    </section>
+    <section class="expertise">
+        <div class="container col-10 mx-auto">
 
-        <div class="container_cards">
-            {% include './templates/sm_cards_template.njk' %}
-
+            <div class="container_cards">
+                {%- for audit_cards in collections.audit_cards -%}
+                    <div class="expertise_card_smaller">
+                        <h3 class="card_title_service">{{audit_cards.data.title}}</h1>
+                        <div class="card_b">
+                            <div class="expertise_img_container_sm"><img src="{{audit_cards.data.image}}" alt="{{audit_cards.data.altImage}}"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn {{audit_cards.data.jqueryClass}}">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+                {%- endfor -%}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 </main>

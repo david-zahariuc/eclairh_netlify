@@ -1,76 +1,82 @@
 ---
 layout: 'base.njk'
 ---
-<section class="contact_bg"></section>
+<section class="contact_bg">
+<div class="mx-auto px-1 py-5 col-xl-8 col-10">
+<p class="blue " style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: medium">Vous avez besoins de plus d'informations ou souhaitez prendre rdv ?</p>
+<p class="blue " style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: medium">Formulez votre demande. Nous vous répondrons dans le créneau que vous nous indiquerez.</p>
+</div>
+</section>
 <section>
     <div class="container_form col-xxl-10 d-flex flex-wrap">
-        <div class="col col-md-6 map px-5">
-            <h6 class="section_title mb-5">Contact</h6>
-            <div class="map_container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5728.988058241853!2d4.855532740630789!3d45.77224196202124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb6e26c6fbef%3A0x4c02ef275b8b2000!2sEclair&#39;h!5e0!3m2!1sro!2sfr!4v1663669935135!5m2!1sro!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="info_container">
-                <div class="mb-5">
-                    <p class="contact_info">
-                        <span>Où nous retrouver:
-                        </span>{{settings.address}}
-                    </p>
-                    <p class="contact_info">
-                        <span>Pour nous contacter de vive voix:
-                        </span> {{settings.phone}}
-                    </p>
-                    <p class="contact_info">
-                        <span>Ou bien par mail:
-                        </span>{{settings.email}}
-                    </p>
-                </div>
-                <div class="mp-5">
-                    <p class="contact_info">
-                        Vous pouvez également nous retrouver sur LinkdIn:
-                    </p>
-                    <div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col col-md-6 contact_form px-5">
-            <h6 class="section_title mb-5">Formulaire</h6>
+        <div class="col col-lg-6 contact_form px-1 px-sm-5 py-5">
+            <h6 class="section_title mb-5">Formulaire de contact</h6>
             <form action="#" method="post" name="contact-page" data-netlify="true">
 
                 <div class="form_container">
                     <div>
-                        <input type="text" name="nom" placeholder="Nom">
+                        <input type="text" name="nom" placeholder="Votre Nom & Prénom">
                     </div>
                     <div>
-                        <input type="mail" name="email" placeholder="Adresse mail">
+                        <input type="mail" name="email" placeholder="Votre Adresse Mail">
                     </div>
                     <div>
-                        <input type="text" name="telephone" placeholder="Téléphone">
+                        <input type="text" name="telephone" placeholder="Votre Numéro de Téléphone">
                     </div>
-                    <div>
-                        <input type="text" name="subjet" placeholder="Sujet">
-                    </div>
+                    
                     <div>
                         <textarea name="message" cols="30" rows="5" placeholder="Votre message"></textarea>
                     </div>
                 </div>
                 <div>
-                    <input type="checkbox" name="appointment" checked=false>
-                </div>
-                <div>
-                    <div><input disable=true type="text" name="date" placeholder="Quel jour ?" onfocus="(this.type='date')"></div>
+                    <div><input type="text" name="date" placeholder="Quel jour ?" onfocus="(this.type='date')"></div>
                     <div>
-                    <select name="creneau_horaire" disabled=true>
-                    <option value="">Vos disponibilités ?</option>
-                    <option value="morning">Matin</option>
-                    <option value="afternoon">Apres Midi</option>
-                    </select>
+                        <select name="creneau_horaire">
+                            <option value="">Vos disponibilités ?</option>
+                            <option value="morning" class="blue">Matin</option>
+                            <option value="afternoon" class="blue">Après Midi</option>
+                        </select>
                     </div>
                 </div>
                 <div>
-                    <button type="submit" class="send_btn">Envoyer</button>
+                    <button type="submit" class="blue_btn">Envoyer</button>
                 </div>
             </form>
         </div>
+        <div class="col col-lg-6 map px-1 px-sm-5 py-5">
+            <h6 class="section_title mb-5">Nos coordonnées</h6>
+            <div class="map_container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.735942544922!2d4.860784729224549!3d45.77231713413003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea8fc445da6b%3A0xf8304368c69b1325!2s3%20Rue%20de%20Gen%C3%A8ve%2C%2069006%20Lyon!5e0!3m2!1sfr!2sfr!4v1663764902384!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+            <div class="info_container">
+                <div class="mb-5">
+                    <div>
+                        <p class="contact_info yellow">
+                            Où nous retrouver:
+                        </p>
+                        <p class="contact_info">{{settings.address}}</p>
+                    </div>
+                    <div>
+                        <p class="contact_info yellow">
+                            Pour nous contacter de vive voix:
+                        </p>
+                        <p class="contact_info">{{settings.phone}}</p>
+                    </div>
+
+                    <div>
+                        <p class="contact_info yellow">
+                            Ou bien par mail:
+                        </p>
+                        <p class="contact_info">{{settings.email}}</p>
+                    </div>
+                </div>
+                <div class="mp-5">
+                    <p class="contact_info">
+                        Vous pouvez également nous retrouver sur LinkdIn:
+                    </p>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>

@@ -1,0 +1,16 @@
+---
+tags: particulier_cards
+cardOrder: order:6;
+wrapColor: blue_wrap
+title: Accompagnement individuel
+image: /img/accomp.png
+imgClass: h-100
+altImage: Accompagnement individuel
+jqueryClass: accompagnement
+bgColor:  bg_blue
+backTitleColor: yellow
+textColor: white
+description: ["Vous aider par des solutions concrètes et sur mesure"]
+descriptionListItem: ["Gestion de carrière","Projet de transition professionnelle", "Gestion d’une problématique au travail","Souffrance au travail"]
+buttonBack: card_btn
+---

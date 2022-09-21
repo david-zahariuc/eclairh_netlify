@@ -38,15 +38,7 @@
     width: 75%;
 }
 
-.container_cards_val {
-    padding: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.values_card_container {
-    padding: 1rem;
-}
 
 .container_cards_val {
     justify-content: center;
@@ -117,9 +109,7 @@
 
     }
 
-    .values_card_container {
-        padding: 0;
-    }
+ 
 
 }
 @media only screen and (min-width: 1400px) {

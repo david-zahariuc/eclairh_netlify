@@ -1,0 +1,16 @@
+---
+tags: entreprise_cards
+cardOrder: order:2;
+wrapColor: blue_wrap
+title: Audit Organisationnel
+image: /img/audit.png
+imgClass: h-100
+altImage: Accompagnement individuel
+jqueryClass: audit
+bgColor:  bg_blue
+backTitleColor: yellow
+textColor: white
+description: ["Phase indispensable pour tous ceux qui cherchent à améliorer leur organisation :"]
+descriptionListItem: ["Etat des lieux complet / Analyse 360°","Projection cible", "Gestion d’une problématique au travail","Préconisations et feuille de route"]
+buttonBack: card_btn
+---
