@@ -2,7 +2,7 @@
 <div class="flip-card card_container" style="{{cards.data.cardOrder}}">
     <div class="expertise_card_wrap flip-card-front {{cards.data.wrapColor}}">
         <div class="expertise_card">
-            <h1 class="card_title">{{cards.data.title}}</h1>
+            <h3 class="card_title">{{cards.data.title}}</h3>
             <div class="expertise_img_container"><img class="{{cards.data.imgClass}}" src="{{cards.data.image}}" alt="{{cards.data.altImage}}"></div>
             <div>
                 <div class="card_btn_container">
@@ -13,7 +13,7 @@
     </div>
     <div class="expertise_card_back flip-card-back {{cards.data.bgColor}}">
         <div>
-            <h1 class="back_card_title {{cards.data.backTitleColor}}">{{cards.data.title}}</h1>
+            <h3 class="back_card_title {{cards.data.backTitleColor}}">{{cards.data.title}}</h3>
             <div class="back_card_description {{cards.data.textColor}}">
                 <div class="mb-3">
                     {%- for item in cards.data.description -%}

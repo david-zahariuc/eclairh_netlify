@@ -36,38 +36,16 @@ $(".contact_btn").click(function () {
     window.location.replace("/contact");
 })
 
+/*  menu déroulant*/
 $(document).ready(function () {
 
-    /* Contact page make an appointment */
-
-    if ($('input[name="appointment"]').prop("checked", true)) {
-        $('input[name="date"]').attr('disabled', false);
-        $('input[name="creneau_horaire"]').attr('disabled', false);
-    }
-
-    /**/
-
-    /* responsive images */
-    /*
-    if ($(window).width() < 400) {
-        $(".fit_img").addClass("img_y_fit");
-        $(".fit_img").removeClass("img-fluid");
-    }
-    else if ($(window).width() < 576) {
-        $(".fit_img").addClass("img-fluid");
-        $(".fit_img").removeClass("img_y_fit");
-    } else {
-        $(".fit_img").removeClass("img-fluid");
-        $(".fit_img").addClass("img_y_fit");
-
-    }*/
-    /**/
     $(".dropdown").hover(function () {
         var dropdownMenu = $(this).children(".dropdown-menu");
         if (dropdownMenu.is(":visible")) {
             dropdownMenu.parent().toggleClass("open");
         }
     });
+/**/
 
     $(".flip-card").hover(function () {
 
@@ -84,5 +62,51 @@ $(document).ready(function () {
             .css('transform', 'perspective(none) rotateY(180deg)')
     })
 
+
+    
+        $(".contr_over").on("click", function(){
+          
+           
+             $('html, body').animate({
+            scrollTop:  $( ".bg_sable" ).height()
+        }, 50);
+        })
 });
 
+/* Validation de formulaire */
+
+let nom = document.getElementById('name');
+let erreurNom = document.getElementById('msgErreur');
+let form = document.getElementsByTagName('form')[0];
+let nomRegExp = new RegExp("^[A-Z][A-Za-z' ,!]{2,35}$");
+
+
+nom.addEventListener('input', function (event) {
+    if (nom.validity.valid  && nomRegExp.test(nom.value)) {
+        erreurNom.textContent = '';
+    } else {
+        afficherErreur ();
+  }
+});
+form.addEventListener('submit', function (event) {
+    if(!(nomRegExp.test(nom.value)) || !nom.validity.valid) {
+        event.preventDefault();
+
+        afficherErreur ();
+    }
+  });
+
+  function afficherErreur () {
+    let exp2 = new RegExp("(?=.*?[0-9])");
+    let exp3 = new RegExp(".{2,}");
+    let message = "";
+    if(nom.validity.valueMissing) {
+        message += 'Veuillez insérer votre nom et prénom';
+    }
+     else if(exp2.test(nom.value)) {
+        message += 'Le nom ne doit pas contenir des chiffres';
+    } else if (!exp3.test(nom.value)) {
+        message += 'Le nom doit contenir au minimum 2 caractères';
+    }
+    erreurNom.innerHTML = message;
+}   

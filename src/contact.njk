@@ -15,7 +15,9 @@ layout: 'base.njk'
 
                 <div class="form_container">
                     <div>
-                        <input type="text" name="nom" placeholder="Votre Nom & Prénom">
+                        <input type="text" name="nom" id="name" placeholder="Votre Nom & Prénom" required>
+                                <span class="erreur" id="msgErreur" aria-live="polite"></span>
+
                     </div>
                     <div>
                         <input type="mail" name="email" placeholder="Votre Adresse Mail">

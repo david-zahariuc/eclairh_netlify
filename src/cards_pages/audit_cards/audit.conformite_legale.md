@@ -7,3 +7,4 @@ image: /img/cadre_juridique.png
 
 altImage: Conformité Légale
 jqueryClass: legal
+---
