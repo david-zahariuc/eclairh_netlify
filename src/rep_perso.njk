@@ -6,12 +6,18 @@ layout: 'base.njk'
         <div class="container col-xxl-10 px-4 py-5">
 
             <div class="profile_title px-5">
-                <h3 class="section_title_p">Vous êtes ?</h3>
-
+                <h3 class="section_title_p">Vous êtes représentant du personnel</h3>
+                <p class="sub_heading">La coordination sociale et le dialogue social sont des volets fondamentaux de la
+                    gestion des ressources humaines.</p>
+                <p class="sub_heading">Nos expériences dans l'animation des instances de représentation du personnel
+                    nous ont convaicu qu'un climat social sain repose sur la considération de toutes les parties, dans
+                    leur missions communes d'accompagnements individuels et collectifs de salariés.</p>
+                    <p class="sub_heading">Eclair'H favorise le lien entre tous les acteurs du monde professionnel.</p>
             </div>
-        </section>
-        <section class="px-1 pb-5 px-sm-5"></div>
-        <div class="row col-10 mx-auto mb-5">
+    </section>
+    <section class="px-1 pb-5 px-sm-5">
+        </div>
+        <div class="d-flex flex-wrap justify-content-center col-10 mx-auto mb-5">
             <div class="col-3 container_subtitle px-0">
                 <button type="button" class="subtitle_p bt_over entreprise">Entreprise</button>
             </div>
@@ -31,41 +37,47 @@ layout: 'base.njk'
 
             <div class="container_cards">
                 {%- for particulier_cards in collections.particulier_cards -%}
-                    <div class="flip-card card_container" style="{{particulier_cards.data.cardOrder}}">
-                        <div class="expertise_card_wrap flip-card-front {{particulier_cards.data.wrapColor}}">
-                            <div class="expertise_card">
-                                <h1 class="card_title">{{particulier_cards.data.title}}</h1>
-                                <div class="expertise_img_container"><img class="{{particulier_cards.data.imgClass}}" src="{{particulier_cards.data.image}}" alt="{{particulier_cards.data.altImage}}"></div>
-                                <div>
-                                    <div class="card_btn_container">
-                                        <button class="card_btn {{particulier_cards.data.jqueryClass}}">En savoir plus</button>
-                                    </div>
-                                </div>
+                <div class="flip-card card_container" style="{{particulier_cards.data.cardOrder}}">
+                    <div class="expertise_card_wrap flip-card-front {{particulier_cards.data.wrapColor}}">
+                        <div class="expertise_card">
+                            <h1 class="card_title">{{particulier_cards.data.title}}</h1>
+                            <div class="expertise_img_container"><img class="{{particulier_cards.data.imgClass}}"
+                                    src="{{particulier_cards.data.image}}" alt="{{particulier_cards.data.altImage}}">
                             </div>
-                        </div>
-                        <div class="expertise_card_back flip-card-back {{particulier_cards.data.bgColor}}">
                             <div>
-                                <h1 class="back_card_title {{particulier_cards.data.backTitleColor}}">{{particulier_cards.data.title}}</h1>
-                                <div class="back_card_description {{particulier_cards.data.textColor}}">
-                                    <div class="mb-3">
-                                        {%- for item in particulier_cards.data.description -%}
-                                            <p class="description_title">{{item}}</p>
-                                        {%- endfor -%}
-                                    </div>
-
-                                    <ul class="description_list">
-                                        {%- for item in particulier_cards.data.descriptionListItem -%}
-                                            <li>{{item}}</li>
-                                        {%- endfor -%}
-
-                                    </ul>
+                                <div class="card_btn_container">
+                                    <button class="card_btn {{particulier_cards.data.jqueryClass}}">En savoir
+                                        plus</button>
                                 </div>
-                            </div>
-                            <div class="card_btn_container">
-                                <button class="{{particulier_cards.data.buttonBack}} {{particulier_cards.data.jqueryClass}}">En savoir plus</button>
                             </div>
                         </div>
                     </div>
+                    <div class="expertise_card_back flip-card-back {{particulier_cards.data.bgColor}}">
+                        <div>
+                            <h1 class="back_card_title {{particulier_cards.data.backTitleColor}}">
+                                {{particulier_cards.data.title}}</h1>
+                            <div class="back_card_description {{particulier_cards.data.textColor}}">
+                                <div class="mb-3">
+                                    {%- for item in particulier_cards.data.description -%}
+                                    <p class="description_title">{{item}}</p>
+                                    {%- endfor -%}
+                                </div>
+
+                                <ul class="description_list">
+                                    {%- for item in particulier_cards.data.descriptionListItem -%}
+                                    <li>{{item}}</li>
+                                    {%- endfor -%}
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card_btn_container">
+                            <button
+                                class="{{particulier_cards.data.buttonBack}} {{particulier_cards.data.jqueryClass}}">En
+                                savoir plus</button>
+                        </div>
+                    </div>
+                </div>
                 {%- endfor -%}
 
             </div>

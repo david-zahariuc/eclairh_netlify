@@ -35,6 +35,9 @@ $(".entreprise").click(function () {
 $(".contact_btn").click(function () {
     window.location.replace("/contact");
 })
+$(".send_btn").click(function () {
+    window.location.replace("/contact");
+})
 
 /*  menu déroulant*/
 $(document).ready(function () {
@@ -65,8 +68,6 @@ $(document).ready(function () {
 
     
         $(".contr_over").on("click", function(){
-          
-           
              $('html, body').animate({
             scrollTop:  $( ".bg_sable" ).height()
         }, 50);
@@ -74,12 +75,10 @@ $(document).ready(function () {
 });
 
 /* Validation de formulaire */
-
 let nom = document.getElementById('name');
 let erreurNom = document.getElementById('msgErreur');
 let form = document.getElementsByTagName('form')[0];
 let nomRegExp = new RegExp("^[A-Z][A-Za-z' ,!]{2,35}$");
-
 
 nom.addEventListener('input', function (event) {
     if (nom.validity.valid  && nomRegExp.test(nom.value)) {

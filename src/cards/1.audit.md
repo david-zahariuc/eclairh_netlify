@@ -11,6 +11,6 @@ bgColor:  bg_blue
 backTitleColor: yellow
 textColor: white
 description: ["Phase indispensable pour tous ceux qui cherchent à améliorer leur organisation :"]
-descriptionListItem: ["Etat des lieux complet / Analyse 360°","Projection cible", "Gestion d’une problématique au travail","Préconisations et feuille de route"]
+descriptionListItem: ["Etat des lieux complet / Analyse 360°","Projection cible","Préconisations et feuille de route"]
 buttonBack: card_btn
 ---
