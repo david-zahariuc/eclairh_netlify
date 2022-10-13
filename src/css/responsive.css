@@ -9,6 +9,12 @@
     outline: 0;
     box-shadow: none !important;
 }
+@media only screen and (max-width: 400px){
+    .card_container{
+        width: 100% !important;
+        margin: 25px 0;
+    }
+}
 @media only screen and (max-width: 768px) {
     
     .container_img{

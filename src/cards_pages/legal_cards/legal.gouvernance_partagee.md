@@ -1,6 +1,6 @@
 ---
-tags: conseil_cards
-cardOrder: order:5;
+tags: legal_cards
+cardOrder: order:4;
 
 title: Organisation et gestion RH en gouvernance partagée
 image: /img/gouvernance.png

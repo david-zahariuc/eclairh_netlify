@@ -1,6 +1,6 @@
 ---
 tags: particulier_cards
-cardOrder: order:6;
+cardOrder: order:2;
 wrapColor: blue_wrap
 title: Accompagnement individuel
 image: /img/accomp.png

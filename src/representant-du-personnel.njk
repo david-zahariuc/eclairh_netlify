@@ -1,12 +1,14 @@
 ---
 layout: 'base.njk'
+title: "Représentant du personnel"
+metaDescription: ""
 ---
 <main>
     <section class="profile">
         <div class="container col-xxl-10 px-4 py-5">
 
             <div class="profile_title px-5">
-                <h3 class="section_title_p">Vous êtes représentant du personnel</h3>
+                <h1 class="section_title_p">Vous êtes représentant du personnel</h1>
                 <p class="sub_heading">La coordination sociale et le dialogue social sont des volets fondamentaux de la
                     gestion des ressources humaines.</p>
                 <p class="sub_heading">Nos expériences dans l'animation des instances de représentation du personnel
@@ -36,35 +38,35 @@ layout: 'base.njk'
         <div class="container col-xxl-10">
 
             <div class="container_cards">
-                {%- for particulier_cards in collections.particulier_cards -%}
-                <div class="flip-card card_container" style="{{particulier_cards.data.cardOrder}}">
-                    <div class="expertise_card_wrap flip-card-front {{particulier_cards.data.wrapColor}}">
+                {%- for rep_perso_cards in collections.rep_perso_cards -%}
+                <div class="flip-card card_container" style="{{rep_perso_cards.data.cardOrder}}">
+                    <div class="expertise_card_wrap flip-card-front {{rep_perso_cards.data.wrapColor}}">
                         <div class="expertise_card">
-                            <h1 class="card_title">{{particulier_cards.data.title}}</h1>
-                            <div class="expertise_img_container"><img class="{{particulier_cards.data.imgClass}}"
-                                    src="{{particulier_cards.data.image}}" alt="{{particulier_cards.data.altImage}}">
+                            <h2 class="card_title">{{rep_perso_cards.data.title}}</h2>
+                            <div class="expertise_img_container"><img class="{{rep_perso_cards.data.imgClass}}"
+                                    src="{{rep_perso_cards.data.image}}" alt="{{rep_perso_cards.data.altImage}}">
                             </div>
                             <div>
                                 <div class="card_btn_container">
-                                    <button class="card_btn {{particulier_cards.data.jqueryClass}}">En savoir
+                                    <button class="card_btn {{rep_perso_cards.data.jqueryClass}}">En savoir
                                         plus</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="expertise_card_back flip-card-back {{particulier_cards.data.bgColor}}">
+                    <div class="expertise_card_back flip-card-back {{rep_perso_cards.data.bgColor}}">
                         <div>
-                            <h1 class="back_card_title {{particulier_cards.data.backTitleColor}}">
-                                {{particulier_cards.data.title}}</h1>
-                            <div class="back_card_description {{particulier_cards.data.textColor}}">
+                            <h2 class="back_card_title {{rep_perso_cards.data.backTitleColor}}">
+                                {{rep_perso_cards.data.title}}</h2>
+                            <div class="back_card_description {{rep_perso_cards.data.textColor}}">
                                 <div class="mb-3">
-                                    {%- for item in particulier_cards.data.description -%}
+                                    {%- for item in rep_perso_cards.data.description -%}
                                     <p class="description_title">{{item}}</p>
                                     {%- endfor -%}
                                 </div>
 
                                 <ul class="description_list">
-                                    {%- for item in particulier_cards.data.descriptionListItem -%}
+                                    {%- for item in rep_perso_cards.data.descriptionListItem -%}
                                     <li>{{item}}</li>
                                     {%- endfor -%}
 
@@ -73,7 +75,7 @@ layout: 'base.njk'
                         </div>
                         <div class="card_btn_container">
                             <button
-                                class="{{particulier_cards.data.buttonBack}} {{particulier_cards.data.jqueryClass}}">En
+                                class="{{rep_perso_cards.data.buttonBack}} {{rep_perso_cards.data.jqueryClass}}">En
                                 savoir plus</button>
                         </div>
                     </div>

@@ -1,5 +1,7 @@
 ---
 layout: 'base.njk'
+title: "Gouvernance partagée"
+metaDescription: ""
 ---
 <main>
 
@@ -191,16 +193,16 @@ layout: 'base.njk'
         <div class="container col-10 mx-auto">
 
             <div class="container_cards">
-                {%- for audit_cards in collections.audit_cards -%}
+                {%- for gouvernance_cards in collections.gouvernance_cards -%}
                 <div class="expertise_card_smaller">
-                    <h3 class="card_title_service">{{audit_cards.data.title}}</h1>
-                        <div class="card_b">
-                            <div class="expertise_img_container_sm"><img src="{{audit_cards.data.image}}"
-                                    alt="{{audit_cards.data.altImage}}"></div>
-                            <div class="card_btn_container">
-                                <button class="card_btn {{audit_cards.data.jqueryClass}}">En savoir plus</button>
-                            </div>
+                    <h2 class="card_title_service">{{gouvernance_cards.data.title}}</h2>
+                    <div class="card_b">
+                        <div class="expertise_img_container_sm"><img src="{{gouvernance_cards.data.image}}"
+                                alt="{{gouvernance_cards.data.altImage}}"></div>
+                        <div class="card_btn_container">
+                            <button class="card_btn {{gouvernance_cards.data.jqueryClass}}">En savoir plus</button>
                         </div>
+                    </div>
                 </div>
                 {%- endfor -%}
             </div>

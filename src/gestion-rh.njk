@@ -1,5 +1,7 @@
 ---
 layout: 'base.njk'
+title: "GESTION RH"
+metaDescription: ""
 ---
 <main>
 
@@ -192,14 +194,14 @@ layout: 'base.njk'
         <div class="container col-10 mx-auto">
 
             <div class="container_cards">
-                {%- for conseil_cards in collections.conseil_cards -%}
+                {%- for gestion_cards in collections.gestion_cards -%}
                 <div class="expertise_card_smaller">
-                    <h3 class="card_title_service">{{conseil_cards.data.title}}</h1>
+                    <h2 class="card_title_service">{{gestion_cards.data.title}}</h2>
                         <div class="card_b">
-                            <div class="expertise_img_container_sm"><img src="{{conseil_cards.data.image}}"
-                                    alt="{{conseil_cards.data.altImage}}"></div>
+                            <div class="expertise_img_container_sm"><img src="{{gestion_cards.data.image}}"
+                                    alt="{{gestion_cards.data.altImage}}"></div>
                             <div class="card_btn_container">
-                                <button class="card_btn {{conseil_cards.data.jqueryClass}}">En savoir plus</button>
+                                <button class="card_btn {{gestion_cards.data.jqueryClass}}">En savoir plus</button>
                             </div>
                         </div>
                 </div>

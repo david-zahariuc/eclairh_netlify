@@ -2,7 +2,7 @@
 tags: asso_cards
 cardOrder: order:2;
 wrapColor: blue_wrap
-title: Structurer la Gouvernance Partagée
+title: Organisation et gestion RH en gouvernance partagée
 image: /img/gouvernance.png
 imgClass: img_x_fit
 altImage: Gouvernance Partagée

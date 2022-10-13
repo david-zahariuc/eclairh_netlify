@@ -1,12 +1,14 @@
 ---
 layout: 'base.njk'
+title: "Particulier"
+metaDescription: ""
 ---
 <main>
     <section class="profile">
         <div class="container col-xxl-10 px-4 py-5">
 
             <div class="profile_title px-5">
-                <h3 class="section_title_p">Vous êtes un particulier</h3>
+                <h1 class="section_title_p">Vous êtes un particulier</h1>
                 <p class="sub_heading fw-bold">Une expertise RH au service des particuliers</p>
                 <p class="sub_heading">Que vous soyez en recherche d'emploi, salarié, représentant du personnel, nous vous proposons des solutions de conseils et d'accompagnement au plus proche de vos besions.</p>
 
@@ -36,7 +38,7 @@ layout: 'base.njk'
                     <div class="flip-card card_container" style="{{particulier_cards.data.cardOrder}}">
                         <div class="expertise_card_wrap flip-card-front {{particulier_cards.data.wrapColor}}">
                             <div class="expertise_card">
-                                <h1 class="card_title">{{particulier_cards.data.title}}</h1>
+                                <h2 class="card_title">{{particulier_cards.data.title}}</h2>
                                 <div class="expertise_img_container"><img class="{{particulier_cards.data.imgClass}}" src="{{particulier_cards.data.image}}" alt="{{particulier_cards.data.altImage}}"></div>
                                 <div>
                                     <div class="card_btn_container">
@@ -47,7 +49,7 @@ layout: 'base.njk'
                         </div>
                         <div class="expertise_card_back flip-card-back {{particulier_cards.data.bgColor}}">
                             <div>
-                                <h1 class="back_card_title {{particulier_cards.data.backTitleColor}}">{{particulier_cards.data.title}}</h1>
+                                <h2 class="back_card_title {{particulier_cards.data.backTitleColor}}">{{particulier_cards.data.title}}</h2>
                                 <div class="back_card_description {{particulier_cards.data.textColor}}">
                                     <div class="mb-3">
                                         {%- for item in particulier_cards.data.description -%}

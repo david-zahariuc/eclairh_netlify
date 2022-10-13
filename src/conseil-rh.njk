@@ -1,5 +1,7 @@
 ---
 layout: 'base.njk'
+title: "CONSEIL RH"
+metaDescription: ""
 ---
 <main>
 
@@ -203,7 +205,7 @@ layout: 'base.njk'
             <div class="container_cards">
                 {%- for conseil_cards in collections.conseil_cards -%}
                 <div class="expertise_card_smaller">
-                    <h3 class="card_title_service">{{conseil_cards.data.title}}</h1>
+                    <h2 class="card_title_service">{{conseil_cards.data.title}}</h2>
                         <div class="card_b">
                             <div class="expertise_img_container_sm"><img src="{{conseil_cards.data.image}}"
                                     alt="{{conseil_cards.data.altImage}}"></div>

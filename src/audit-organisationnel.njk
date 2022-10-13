@@ -1,5 +1,7 @@
 ---
 layout: 'base.njk'
+title: "Audit Organisationnel"
+metaDescription: ""
 ---
 <main>
 
@@ -205,7 +207,7 @@ layout: 'base.njk'
             <div class="container_cards">
                 {%- for audit_cards in collections.audit_cards -%}
                 <div class="expertise_card_smaller">
-                    <h3 class="card_title_service">{{audit_cards.data.title}}</h1>
+                    <h2 class="card_title_service">{{audit_cards.data.title}}</h2>
                         <div class="card_b">
                             <div class="expertise_img_container_sm"><img src="{{audit_cards.data.image}}"
                                     alt="{{audit_cards.data.altImage}}"></div>

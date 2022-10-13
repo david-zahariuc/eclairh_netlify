@@ -1,12 +1,14 @@
 ---
 layout: 'base.njk'
+title: "Association"
+metaDescription: ""
 ---
 <main>
     <section class="profile">
         <div class="container col-xxl-10 px-4 py-5">
 
             <div class="profile_title px-5">
-                <h3 class="section_title_p">Vous êtes une Association</h3>
+                <h1 class="section_title_p">Vous êtes une Association</h1>
                 <p class="sub_heading">L'organisation et les moyens du monde associatif ne permet pas toujours de disposer de toutes les ressources compétentes en matière de gestion.</p>
                 <p class="sub_heading">Nos expériences auprès du monde associatif nous permettent d'identifier les besoins dans votre quotidien et les solutions qui y répondent.</p>
                 <p class="sub_heading">Voici les solutions que nous vous proposons pour vous aider à vous professionnaliser, structurer et à développer votre projet associatif.</p>
@@ -38,7 +40,7 @@ layout: 'base.njk'
                     <div class="flip-card card_container" style="{{asso_cards.data.cardOrder}}">
                         <div class="expertise_card_wrap flip-card-front {{asso_cards.data.wrapColor}}">
                             <div class="expertise_card">
-                                <h1 class="card_title">{{asso_cards.data.title}}</h1>
+                                <h2 class="card_title">{{asso_cards.data.title}}</h2>
                                 <div class="expertise_img_container"><img class="{{asso_cards.data.imgClass}}" src="{{asso_cards.data.image}}" alt="{{asso_cards.data.altImage}}"></div>
                                 <div>
                                     <div class="card_btn_container">
@@ -49,7 +51,7 @@ layout: 'base.njk'
                         </div>
                         <div class="expertise_card_back flip-card-back {{asso_cards.data.bgColor}}">
                             <div>
-                                <h1 class="back_card_title {{asso_cards.data.backTitleColor}}">{{asso_cards.data.title}}</h1>
+                                <h2 class="back_card_title {{asso_cards.data.backTitleColor}}">{{asso_cards.data.title}}</h2>
                                 <div class="back_card_description {{asso_cards.data.textColor}}">
                                     <div class="mb-3">
                                         {%- for item in asso_cards.data.description -%}

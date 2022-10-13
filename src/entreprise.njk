@@ -1,12 +1,14 @@
 ---
 layout: 'base.njk'
+title: "Entreprise"
+metaDescription: ""
 ---
 <main>
     <section class="profile">
         <div class="container col-xxl-10 px-4 py-5">
 
             <div class="profile_title px-5">
-                <h3 class="section_title_p">Vous êtes une Entreprise</h3>
+                <h1 class="section_title_p">Vous êtes une Entreprise</h1>
                 <p class="sub_heading">Voici les solutions que nous vous proposons pour vous accompagner et soutenir la gestion de votre structure.</p>
 
             </div>
@@ -35,7 +37,7 @@ layout: 'base.njk'
                     <div class="flip-card card_container" style="{{entreprise_cards.data.cardOrder}}">
                         <div class="expertise_card_wrap flip-card-front {{entreprise_cards.data.wrapColor}}">
                             <div class="expertise_card">
-                                <h1 class="card_title">{{entreprise_cards.data.title}}</h1>
+                                <h2 class="card_title">{{entreprise_cards.data.title}}</h2>
                                 <div class="expertise_img_container"><img class="{{entreprise_cards.data.imgClass}}" src="{{entreprise_cards.data.image}}" alt="{{entreprise_cards.data.altImage}}"></div>
                                 <div>
                                     <div class="card_btn_container">
@@ -46,7 +48,7 @@ layout: 'base.njk'
                         </div>
                         <div class="expertise_card_back flip-card-back {{entreprise_cards.data.bgColor}}">
                             <div>
-                                <h1 class="back_card_title {{entreprise_cards.data.backTitleColor}}">{{entreprise_cards.data.title}}</h1>
+                                <h2 class="back_card_title {{entreprise_cards.data.backTitleColor}}">{{entreprise_cards.data.title}}</h2>
                                 <div class="back_card_description {{entreprise_cards.data.textColor}}">
                                     <div class="mb-3">
                                         {%- for item in entreprise_cards.data.description -%}
