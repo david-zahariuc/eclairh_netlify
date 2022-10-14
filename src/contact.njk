@@ -3,13 +3,15 @@ layout: 'base.njk'
 title: "Contact"
 metaDescription: ""
 ---
-<section class="contact_bg">
-<div class="mx-auto px-1 py-5 col-xl-8 col-10">
-<p class="blue " style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: medium">Vous avez besoins de plus d'informations ou souhaitez prendre rdv ?</p>
-<p class="blue " style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: medium">Formulez votre demande. Nous vous répondrons dans le créneau que vous nous indiquerez.</p>
+<div class="contact_bg">
+    <div class="mx-auto px-1 py-5 col-xl-8 col-10">
+        <p class="blue " style="font-family: 'Poppins', sans-serif; font-size: 1rem;">Vous avez besoins de plus
+            d'informations ou souhaitez prendre rdv ?</p>
+        <p class="blue " style="font-family: 'Poppins', sans-serif; font-size: 1rem;">Formulez votre demande. Nous vous
+            répondrons dans le créneau que vous nous indiquerez.</p>
+    </div>
 </div>
-</section>
-<section>
+<div>
     <div class="container_form col-xxl-10 d-flex flex-wrap">
         <div class="col col-lg-6 contact_form px-1 px-sm-5 py-5">
             <h6 class="section_title mb-5">Formulaire de contact</h6>
@@ -18,16 +20,16 @@ metaDescription: ""
                 <div class="form_container">
                     <div>
                         <input type="text" name="nom" id="name" placeholder="Votre Nom & Prénom" required>
-                                <span class="erreur" id="msgErreur" aria-live="polite"></span>
+                        <span class="erreur" id="msgErreur" aria-live="polite"></span>
 
                     </div>
                     <div>
-                        <input type="mail" name="email" placeholder="Votre Adresse Mail">
+                        <input type="email" name="email" placeholder="Votre Adresse Mail">
                     </div>
                     <div>
                         <input type="text" name="telephone" placeholder="Votre Numéro de Téléphone">
                     </div>
-                    
+
                     <div>
                         <textarea name="message" cols="30" rows="5" placeholder="Votre message"></textarea>
                     </div>
@@ -50,7 +52,11 @@ metaDescription: ""
         <div class="col col-lg-6 map px-1 px-sm-5 py-5">
             <h6 class="section_title mb-5">Nos coordonnées</h6>
             <div class="map_container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.735942544922!2d4.860784729224549!3d45.77231713413003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea8fc445da6b%3A0xf8304368c69b1325!2s3%20Rue%20de%20Gen%C3%A8ve%2C%2069006%20Lyon!5e0!3m2!1sfr!2sfr!4v1663764902384!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.735942544922!2d4.860784729224549!3d45.77231713413003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea8fc445da6b%3A0xf8304368c69b1325!2s3%20Rue%20de%20Gen%C3%A8ve%2C%2069006%20Lyon!5e0!3m2!1sfr!2sfr!4v1663764902384!5m2!1sfr!2sfr"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             <div class="info_container">
                 <div class="mb-5">
                     <div>
@@ -83,4 +89,4 @@ metaDescription: ""
         </div>
 
     </div>
-</section>
+</div>
