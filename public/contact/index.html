@@ -170,6 +170,9 @@
                     À propos de nous
                 </a>
             </li>
+            <li class="nav-item my-2 blue">
+                <a class="nav-link white" href="/contact/">Contact</a>
+            </li>
         </ul>
 
     </div>
@@ -209,12 +212,12 @@
                     </div>
                 </div>
                 <div>
-                    <div><input type="text" name="date" placeholder="Quel jour ?" onfocus="(this.type='date')"></div>
+                    <div><input type="text" name="date" id="datepicker" placeholder="Quel jour ?" onfocus="(this.type='date')"></div>
                     <div>
                         <select name="creneau_horaire">
                             <option value="">Vos disponibilités ?</option>
-                            <option value="morning" class="blue">Matin</option>
-                            <option value="afternoon" class="blue">Après Midi</option>
+                            <option value="matin" class="blue">Matin</option>
+                            <option value="apres-midi" class="blue">Après Midi</option>
                         </select>
                     </div>
                 </div>
@@ -255,7 +258,7 @@
                 </div>
                 <div class="mp-5">
                     <p class="contact_info">
-                        Vous pouvez également nous retrouver sur LinkdIn:
+                        Vous pouvez également nous retrouver sur LinkedIn:
                     </p>
                     <div></div>
                 </div>
@@ -275,7 +278,7 @@
             </div>
 
             <div>
-                <h6 class="adress">Notre adresse</h6>
+                <p class="adress">Notre adresse</p>
                 <p class="footer_adress">3 Rue de Genève 69006 Lyon</p>
             </div>
 
@@ -311,24 +314,25 @@
                 </li>
             </ul>
         </div>
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+            <ul class="nav flex-column">
+                
+                <li class="nav-item mb-2">
+                    <a href="/mentions-legales" class="text-center nav-link p-0 text-muted title_col_foot">Mention
+                        légales</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+            <div class="logo_footer">
+                <a href="/">
+                    <img class="logo_img" src="/img/logo.svg" alt="">
+                </a>
+            </div>
+        </div>
 
     </div>
-    <div class="col-10 col-md-3 px-3 mb-4 footer_col">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item mb-2">
-                <a href="/mentions-legales" class="text-center nav-link p-0 text-muted title_col_foot">Mention
-                    légales</a>
-            </li>
-        </ul>
-    </div>
-    <div class="col-10 col-md-3 px-3 mb-4 footer_col">
-        <div class="logo_footer">
-            <a href="/">
-                <img class="logo_img" src="/img/logo.svg" alt="">
-            </a>
-        </div>
-    </div>
+    
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

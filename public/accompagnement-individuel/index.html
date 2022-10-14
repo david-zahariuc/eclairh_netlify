@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">    
+    <title>Accompagnement individuel</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cardo:ital,wght@0,400;0,700;1,400&family=Encode+Sans+Condensed&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Oxygen&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Quattrocento+Sans&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+
+</head>
+
+  <body>
+    <header class="sticky-top" id="nav_desktop">
+    <div style="background-color: white; padding: 10px 0">
+        <div class="nav_top">
+            <div class="nav_top_left">
+                <div class="logo">
+                    <a href="/"><img class="logo_img" src="/img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="vertical_divider"></div>
+                <div id="wrapper_tagline">
+                    <h2 id="tagline">Expertise en Ressources Humaines et en Organisation</h2>
+                </div>
+            </div>
+            <div class="nav_top_right">
+                <div>
+                    <button class="contact_btn">Prendre RDV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <nav id="nav_bottom" class="navbar navbar-expand-md">
+            <div class="collapse navbar-collapse nav_bottom_order" id="navbarNavDropdown">
+                <ul class="navbar-nav nav_flex_space_btw">
+                    <li class="nav-item nav_bottom_item">
+                        <a class="nav-link nav_bottom_link" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown nav_bottom_item">
+                        <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos solutions</a>
+                        <ul class="dropdown-menu dropdown-menu_over">
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="/conseil-rh">Conseil RH</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="/audit-organisationnel">Audit Organisationnel</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item_over " href="/gestion-rh">Mise en place d'une gestion RH
+                                <br>
+                                saine et perenne</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="/conformite-legale">Conformité Légale</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="/gouvernance-partagee">Gouvernance Partagée</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over " href="/accompagnement-individuel">Accompagnement individuel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown nav_bottom_item">
+                    <a class="nav-link dropdown-toggle nav_bottom_link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vous êtes</a>
+                    <ul class="dropdown-menu dropdown-menu_over">
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/entreprise">Entreprise</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/association">Association</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/particulier">Particulier</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over" href="/representant-du-personnel">Représentant du personnel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav_bottom_item">
+                    <a class="nav-link nav_bottom_link" href="#">
+                        À propos de nous
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+</header>
+
+<header class="sticky-top" id="nav_mobile">
+<nav class="navbar navbar-expand-lg bg-ight py-0">
+        <div class="container-fluid px-0">
+            <div class="container-fluid d-flex justify-content-between bg-light py-2">
+                <div class="logo">
+                    <a class="navbar-brand" href="/"><img class="logo_img" src="/img/logo.svg" alt="logo"></a>
+                </div>
+                <button class="navbar-toggler toggler_over" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        <div class="collapse px-4 py-4 navbar-collapse bg_blue" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item  my-2">
+                    <a class="nav-link white" href="/">Accueil</a>
+                </li> 
+                <li class="nav-item  my-2 dropdown">
+                    <a class="nav-link dropdown-toggle white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nos solutions
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="/conseil-rh">Conseil RH</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="/audit-organisationnel">Audit Organisationnel</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item_over blue" href="/gestion-rh">Mise en place d'une gestion RH
+                            <br>
+                            saine et perenne</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/conformite-legale">Conformité Légale</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/gouvernance-partagee">Gouvernance Partagée</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/accompagnement-individuel">Accompagnement individuel</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item  my-2 dropdown">
+                <a class="nav-link dropdown-toggle white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Vous êtes
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/entreprise">Entreprise</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/association">Association</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/particulier">Particulier</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-item_over blue" href="/representant-du-personnel">Représentant du personnel</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item my-2 blue">
+                <a class="nav-link white" href="#">
+                    À propos de nous
+                </a>
+            </li>
+            <li class="nav-item my-2 blue">
+                <a class="nav-link white" href="/contact/">Contact</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+</nav>
+</header>
+
+      <main>
+
+    <section class="bg_sable">
+        <div class="container-fluid col-xxl-10 px-4 pt-5 mb-5">
+            <div class="row flex-lg-row-reverse g-5 py-2">
+                <div class="col-lg-6 m-0">
+                    <div class="container_img d-flex flex-column justify-content-center"><img
+                            class="d-block mx-auto fit_img img_y_fit" src="/img/accomp_page.png"
+                            alt="Accompagnement individuel" loading="lazy"></div>
+                </div>
+                <div class="col-lg-6 mt-2 mt-sm-5">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 title_intro">Accompagnement individuel</h1>
+                    <p class="mx-5 description_subsection">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_block">
+        <h2 style="display: none;">Accompagnement individuel</h2>
+        <div class="container col-xxl-10">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+                <div class="row col-8 mx-auto mb-4">
+                    <div class="carousel-indicators d-flex flex-wrap">
+                        <div class="col-3 container_subtitle">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="subtitle active" aria-current="true" aria-label="Slide 1">Situation
+                                complexe</button>
+                        </div>
+                        <div class="col-3 container_subtitle">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                class="subtitle" aria-label="Slide 2">Gestion de carrière</button>
+                        </div>
+                        <div class="col-3 container_subtitle">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                class="subtitle" aria-label="Slide 3">Appui aux IRP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg_sable">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container_sub bg_sable">
+                                <h3 class="service_subtitle fw-bold"><span
+                                        style="display: inline-block; margin-right: 0.5rem;"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.25122 14.7487C1.36971 15.4588 1.987 16 2.7307 16H14.4999C15.3284 16 15.9999 15.3284 15.9999 14.5V2.73076C15.9999 1.98706 15.4587 1.36977 14.7486 1.25128C14.7621 1.33218 14.7692 1.41526 14.7692 1.49999V13.2692C14.7692 14.0976 14.0976 14.7692 13.2692 14.7692H1.49993C1.4152 14.7692 1.33212 14.7622 1.25122 14.7487Z"
+                                                fill="#3C405B" />
+                                            <rect x="0.5" y="0.5" width="13.7692" height="13.7692" rx="1"
+                                                stroke="#3C405B" />
+                                        </svg></span>Résoudre un problème au travail</h3>
+                                <p class="description_subsection">
+                                    Que l’origine du problème soit liée à un malaise relationnel, à du surmenage, à du
+                                    harcèlement ou à une procédure disciplinaire lancée à votre encontre, il demeure lié
+                                    à votre vie professionnelle qui est régie par un cadre contractuel.</p>
+                                <p class="description_subsection">Un cadre, parfois ignoré qui octroie des droits, comme
+                                    des obligations, à chacune des parties. Expert en matière de procédures RH, notre
+                                    cabinet mettra tout en oeuvre pour faire valoir vos droits à travers toutes formes
+                                    de communication écrite (en votre nom), vous préparera à vous positionner et vous
+                                    accompagnera à faire face à la situation vis-à-vis de votre employeur.</p>
+                                <p class="description_subsection">Exit l’attente d’une procédure prud’homale ou la
+                                    soumission à une contexte de souffrance, notre cabinet milite pour l’accès au droit
+                                    à la santé pour tous au travail, en considérant la situation de chacun au travail.
+                                </p>
+                                <p class="description_subsection">​Suivi de près par <span class="fw-bold">un unique
+                                        interlocuteur</span> à votre
+                                    écoute, l’accompagnement reposera sur:
+                                </p>
+                                <ul class="subsection_list description_subsection">
+                                    <li class="sqr_bullet_li">L’analyse approfondie de la situation</li>
+                                    <li class="sqr_bullet_li">L’étude de votre dossier : mails, courriers, contrats,
+                                        convention collective,
+                                        accords négociés…</li>
+                                    <li class="sqr_bullet_li">Déterminer l’axe de réaction stratégique</li>
+                                    <li class="sqr_bullet_li">Réaliser en votre nom toutes formes de communication
+                                        écrites (courriers, mails)</li>
+                                    <li class="sqr_bullet_li">Vous préparer aux échanges</li>
+                                    <li class="sqr_bullet_li">Se rapprocher de vos représentants du personnel pour les
+                                        intégrer à la démarche si nécessaire</li>
+                                    <li class="sqr_bullet_li">Accompagnement à la négociation de ruptures
+                                        transactionnelles</li>
+                                    <li class="sqr_bullet_li">Constituer un dossier solide et orientation vers d’autres
+                                        professionnels partenaires, si besoin.</li>
+                                </ul>
+
+                                <p class="description_subsection fst-italic">Notre Cabinet travaille en partenariat avec
+                                    un cabinet d'avocats spécialisé en droit du travail, tout en continuant à vous
+                                    accompagner dans cette procédure
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container_sub bg_sable">
+                                <div class="mb-2">
+                                    <h3 class="service_subtitle w-100 fw-bold"><span
+                                            style="display: inline-block; margin-right: 0.5rem;"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.25122 14.7487C1.36971 15.4588 1.987 16 2.7307 16H14.4999C15.3284 16 15.9999 15.3284 15.9999 14.5V2.73076C15.9999 1.98706 15.4587 1.36977 14.7486 1.25128C14.7621 1.33218 14.7692 1.41526 14.7692 1.49999V13.2692C14.7692 14.0976 14.0976 14.7692 13.2692 14.7692H1.49993C1.4152 14.7692 1.33212 14.7622 1.25122 14.7487Z"
+                                                    fill="#3C405B" />
+                                                <rect x="0.5" y="0.5" width="13.7692" height="13.7692" rx="1"
+                                                    stroke="#3C405B" />
+                                            </svg></span>Un nouveau projet professionnel</h3>
+                                    <p class="description_subsection">Vous avez envie de renouveau, d’évolution, de vous
+                                        réaliser autrement ?</p>
+                                    <p class="description_subsection">Réfléchir à de nouvelles perspectives
+                                        professionnelles, à un nouveau métier suppose un bilan approfondi de son
+                                        parcours
+                                        professionnel mais aussi personnel pour trouver la cohérence et la réussite de
+                                        votre
+                                        projet.</p>
+                                    <p class="description_subsection">Loin des modèles standards, nous accompagnons tout
+                                        le
+                                        cheminement, à partir du questionnement jusqu’à la mise en situation, pour
+                                        soutenir
+                                        votre phase de transition.</p>
+                                    <p class="description_subsection"><span
+                                            style="display: inline-block; margin-right: 0.5rem;"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="21" height="16"
+                                                viewBox="0 0 21 16" fill="none">
+                                                <path
+                                                    d="M16.9012 0.540725C17.6222 -0.180242 18.7911 -0.180242 19.5121 0.540725C20.2242 1.25285 20.2329 2.40201 19.5383 3.12485L9.71131 15.4086C9.69712 15.4263 9.68197 15.4432 9.66591 15.4593C8.94495 16.1802 7.77603 16.1802 7.05506 15.4593L0.540726 8.94494C-0.180242 8.22398 -0.180242 7.05506 0.540726 6.33409C1.26169 5.61312 2.43061 5.61312 3.15158 6.33409L8.30486 11.4874L16.8522 0.59595C16.8674 0.576579 16.8838 0.558137 16.9012 0.540725Z"
+                                                    fill="#3C405B" />
+                                            </svg></span>Etude approfondie du parcours, profil & compétences,
+                                        construction du projet & définition des objectifs, identification et analyse des
+                                        postes cible, adaptation du profil / CV, simulations et suivis des entretiens.
+                                    </p>
+                                    <p class="description_subsection"><span
+                                            style="display: inline-block; margin-right: 0.5rem;"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="21" height="16"
+                                                viewBox="0 0 21 16" fill="none">
+                                                <path
+                                                    d="M16.9012 0.540725C17.6222 -0.180242 18.7911 -0.180242 19.5121 0.540725C20.2242 1.25285 20.2329 2.40201 19.5383 3.12485L9.71131 15.4086C9.69712 15.4263 9.68197 15.4432 9.66591 15.4593C8.94495 16.1802 7.77603 16.1802 7.05506 15.4593L0.540726 8.94494C-0.180242 8.22398 -0.180242 7.05506 0.540726 6.33409C1.26169 5.61312 2.43061 5.61312 3.15158 6.33409L8.30486 11.4874L16.8522 0.59595C16.8674 0.576579 16.8838 0.558137 16.9012 0.540725Z"
+                                                    fill="#3C405B" />
+                                            </svg></span>Accompagné par un psychologue du travail, le bilan de
+                                        vos compétences se réalisera dans le respect de votre identité, de votre état
+                                        actuel
+                                        et de votre histoire grâce à des outils adaptés.</p>
+                                </div>
+                                <div>
+                                    <h3 class="service_subtitle fw-bold w-100"><span
+                                            style="display: inline-block; margin-right: 0.5rem;"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.25122 14.7487C1.36971 15.4588 1.987 16 2.7307 16H14.4999C15.3284 16 15.9999 15.3284 15.9999 14.5V2.73076C15.9999 1.98706 15.4587 1.36977 14.7486 1.25128C14.7621 1.33218 14.7692 1.41526 14.7692 1.49999V13.2692C14.7692 14.0976 14.0976 14.7692 13.2692 14.7692H1.49993C1.4152 14.7692 1.33212 14.7622 1.25122 14.7487Z"
+                                                    fill="#3C405B" />
+                                                <rect x="0.5" y="0.5" width="13.7692" height="13.7692" rx="1"
+                                                    stroke="#3C405B" />
+                                            </svg></span>Vous préparer aux entretiens</h3>
+                                    <p class="description_subsection">Les entretiens jalonnent toute la vie
+                                        professionnelle.
+                                    </p>
+                                    <p class="description_subsection">Dans une dynamique de recherche d’emploi ou
+                                        lorsque vous êtes déjà en poste, les entretiens représentent un enjeux : obtenir
+                                        un emploi, une évolution, une revalorisation salariale, exprimer ses attentes…
+                                    </p>
+                                    <p class="description_subsection">Parce qu’ils représentent des enjeux, vous vous
+                                        sentez souvent vulnérables, et parfois en perte de confiance.</p>
+                                    <p class="description_subsection">Notre cabinet met à votre service son expertise en
+                                        ressources humaines et sa connaissance des process RH pour vous aider à
+                                        construire votre propos et vous apporter tout le recul nécessaire à la réussite
+                                        de vos échanges : entretien annuel d’évaluation, entretien d’embauche, entretien
+                                        managérial…</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container_sub bg_sable">
+                                <p class="description_subsection">Animés par la volonté d’oeuvrer pour un environnement
+                                    de travail juste et des conditions de travail sécurisantes pour chacun, tous statuts
+                                    confondus, nous travaillons en étroite collaboration avec les représentants élus des
+                                    salariés, portés par cette même volonté.</p>
+                                <p class="description_subsection">Pour nous, pas de clivage RH / IRP. Nous sommes
+                                    convaincus de la nécessité de réunir nos savoir-faire et missions pour garantir
+                                    l’intérêt de tous à maintenir un environnement de travail sain.</p>
+                                <p class="description_subsection">Nous pouvons intervenir auprès de vos Comités et/ou
+                                    organisations syndicales afin de vous apporter tout support nécessaire à vos sujets,
+                                    à vos contextes et à vous appuyer dans les accompagnements de salariés en
+                                    difficulté, avec notre <span class="fw-bold">approche humaine et de
+                                        proximité.</span></p>
+                                <p class="description_subsection">Nos expériences dans les fonctions à responsabilités
+                                    des ressources humaines ainsi que celles dans l’accompagnement libéral des salariés
+                                    en difficulté, nous permettent d’avoir une vision globale des situations dans le
+                                    monde du travail et nous donnent ainsi les <span class="fw-bold">moyens
+                                        d’accompagnements complets et
+                                        adaptés.</span></p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bottom_contr">
+
+                        <button class="carousel-control-prev contr_over" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="prev_arrow" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next contr_over" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="next_arrow" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container col-xxl-10 py-5">
+
+            <div class="container_sub pb_c bg_sable">
+                <div class="col col-md-4">
+                    <div class="mx-3 px-3 py-3 px-sm-5 py-sm-5 h-100"
+                        style="background: transparent linear-gradient(132deg, #FAFF6F 0%, #FECB13 100%) 0% 0% no-repeat padding-box;">
+                        <p class=" text-center">1er échange gratuit</p>
+                        <p class=" text-center">Devis adapté à vos besoins et à votre situation</p>
+                    </div>
+                </div>
+                <div class="col col-md-8">
+                    <div class="mx-3 px-3 py-3 px-sm-5 py-sm-5 h-100">
+                        <p class="blue mb-5 text-center">Nous vous aidons à vous réapproprier
+                            votre destin professionnel.
+                        Pas de standard: une gestion individualisée qui répond à qui vous êtes et à
+                            ce que vous vivez.</p>
+                        <div>
+                            <button class="blue_btn send_btn">Contactez-nous</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="expertise">
+        <div class="container col-10 mx-auto">
+
+            <div class="container_cards"><div class="expertise_card_smaller">
+                    <h2 class="card_title_service">Audit Organisationnel</h2>
+                        <div class="card_b">
+                            <div class="expertise_img_container_sm"><img src="/img/audit.png"
+                                    alt="Audit Organisationnel"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn audit">En savoir plus</button>
+                            </div>
+                        </div>
+                </div><div class="expertise_card_smaller">
+                    <h2 class="card_title_service">Conformité Légale</h2>
+                        <div class="card_b">
+                            <div class="expertise_img_container_sm"><img src="/img/cadre_juridique.png"
+                                    alt="Conformité Légale"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn legal">En savoir plus</button>
+                            </div>
+                        </div>
+                </div><div class="expertise_card_smaller">
+                    <h2 class="card_title_service">Conseil RH</h2>
+                        <div class="card_b">
+                            <div class="expertise_img_container_sm"><img src="/img/conseil_rh.png"
+                                    alt="Conseil RH"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn conseil">En savoir plus</button>
+                            </div>
+                        </div>
+                </div><div class="expertise_card_smaller">
+                    <h2 class="card_title_service">Organisation et gestion RH en gouvernance partagée</h2>
+                        <div class="card_b">
+                            <div class="expertise_img_container_sm"><img src="/img/gouvernance.png"
+                                    alt="Gouvernance Partagée"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn gouvernance">En savoir plus</button>
+                            </div>
+                        </div>
+                </div><div class="expertise_card_smaller">
+                    <h2 class="card_title_service">Mise en place d&#39;une gestion RH saine et perenne</h2>
+                        <div class="card_b">
+                            <div class="expertise_img_container_sm"><img src="/img/mise_en_place.png"
+                                    alt="gestion RH"></div>
+                            <div class="card_btn_container">
+                                <button class="card_btn gestion">En savoir plus</button>
+                            </div>
+                        </div>
+                </div></div>
+        </div>
+    </section>
+
+</main>
+
+    <footer class="py-5 g-0 custom_css">
+    <div class="container col-xxl-10 d-flex justify-content-center flex-wrap mx-auto">
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+            <div class="mb-2 pb-3">
+                <a href="/contact/" class="nav-link pb-3 text-center text-muted title_col_foot">Contact</a>
+                <p class="footer_adress">contact@eclairh.fr</p>
+
+            </div>
+
+            <div>
+                <p class="adress">Notre adresse</p>
+                <p class="footer_adress">3 Rue de Genève 69006 Lyon</p>
+            </div>
+
+        </div>
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+            <p class="title_col_foot text-center">Nos solutions</p>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a href="/conseil-rh" class="text-center nav-link p-0 text-muted nav_link_foot">Conseil
+                        RH</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/audit-organisationnel"
+                        class="text-center nav-link p-0 text-muted nav_link_foot">Audit Organisationnel</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/gestion-rh" class="text-center nav-link p-0 text-muted nav_link_foot">Mise en
+                        place d'une gestion RH
+                        <br>
+                        saine et perenne</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/conformite-legale"
+                        class="text-center nav-link p-0 text-muted nav_link_foot">Conformité Légale</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/gouvernance-partagee"
+                        class="text-center nav-link p-0 text-muted nav_link_foot">Gouvernance Partagée</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="/accompagnement-individuel"
+                        class="text-center nav-link p-0 text-muted nav_link_foot">Accompagnement individuel</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+            <ul class="nav flex-column">
+                
+                <li class="nav-item mb-2">
+                    <a href="/mentions-legales" class="text-center nav-link p-0 text-muted title_col_foot">Mention
+                        légales</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-10 col-md-3 px-3 mb-4 footer_col">
+            <div class="logo_footer">
+                <a href="/">
+                    <img class="logo_img" src="/img/logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
+    
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+
+
+  </body>
+  </html>
