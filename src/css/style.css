@@ -113,7 +113,7 @@ img {
 
 .contact_btn {
 
-    width: 135px;
+    width: fit-content;
     padding: 10px 15px;
     background: transparent linear-gradient(90deg, #FFC000 0%, #FFC60AF3 0%, #FAFE6CCF 100%, #FAFF6F 100%) 0% 0% no-repeat padding-box;
     border-radius: 27px;
@@ -1009,7 +1009,7 @@ img {
     text-align: left;
     font-family: 'Poppins', sans-serif;
     font-weight: medium;
-    font-size: 1rem;
+    font-size: 0.9rem;
     letter-spacing: 0px;
     color: #3C405B;
 }

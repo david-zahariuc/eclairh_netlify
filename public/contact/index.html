@@ -35,7 +35,7 @@
             </div>
             <div class="nav_top_right">
                 <div>
-                    <button class="contact_btn">Prendre RDV</button>
+                    <button class="contact_btn">Contact</button>
                 </div>
             </div>
         </div>
@@ -197,18 +197,16 @@
                 <div class="form_container">
                     <div>
                         <input type="text" name="nom" id="name" placeholder="Votre Nom & Prénom" required>
-                        <span class="erreur" id="msgErreur" aria-live="polite"></span>
-
                     </div>
                     <div>
-                        <input type="email" name="email" placeholder="Votre Adresse Mail">
+                        <input type="email" name="email" placeholder="Votre Adresse Mail" required>
                     </div>
                     <div>
-                        <input type="text" name="telephone" placeholder="Votre Numéro de Téléphone">
+                        <input type="text" name="telephone" placeholder="Votre Numéro de Téléphone" required>
                     </div>
 
                     <div>
-                        <textarea name="message" cols="30" rows="5" placeholder="Votre message"></textarea>
+                        <textarea name="message" cols="30" rows="5" placeholder="Votre message" required></textarea>
                     </div>
                 </div>
                 <div>
@@ -222,7 +220,7 @@
                     </div>
                 </div>
                 <div>
-                    <button type="submit" class="blue_btn">Envoyer</button>
+                    <button type="submit" class="blue_btn" id="send-form">Envoyer</button>
                 </div>
             </form>
         </div>
